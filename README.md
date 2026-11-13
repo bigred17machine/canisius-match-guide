@@ -1,2 +1,3 @@
-# canisius-match-guide
-Canisius versus St. Anthonys 2026 soccer match guide
+# Canisius vs. St. Anthony’s
+
+[Read the 2026 match guide](https://bigred17machine.github.io/canisius-match-guide/).
