@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Canisius varsity soccer’s 4-3-3 match guide for the NYSCHSAA semifinal against St. Anthony’s. Pitch diagrams, restarts, and timestamped film.">
-  <meta property="og:title" content="Canisius vs. St. Anthony’s | Match Guide">
-  <meta property="og:description" content="The 4-3-3 game plan, numbered pitch diagrams, and touchline card for the NYSCHSAA semifinal.">
-  <title>Canisius vs. St. Anthony’s · Match Guide</title>
+  <meta name="description" content="The Canisius starting XI and player guide for the NYSCHSAA semifinal against St. Anthony’s.">
+  <meta property="og:title" content="Canisius vs. St. Anthony’s | Player Match Guide">
+  <meta property="og:description" content="The starting XI, 4-3-3 assignments, set pieces, and film for the NYSCHSAA semifinal.">
+  <title>Canisius vs. St. Anthony’s | Player Match Guide</title>
   <style>:root {
   color-scheme: light;
   --navy: #11253c;
@@ -14,21 +14,21 @@
   --gold: #edc36a;
   --ink: #162b41;
   --muted: #536274;
-  --paper: #f5f5ef;
+  --paper: #f7f7f2;
   --white: #fff;
   --line: #d6dcd9;
   --link: #135879;
   font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   color: var(--ink);
   background: var(--paper);
-  line-height: 1.53;
+  line-height: 1.58;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; }
 a { color: var(--link); text-underline-offset: .18em; }
 a:hover { text-decoration-thickness: .13em; }
-a:focus-visible, button:focus-visible { outline: 3px solid #b78322; outline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: 2px solid #b78322; outline-offset: 3px; border-radius: 2px; }
 p, ul, ol { margin: 0 0 .9rem; }
 p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 figure { margin: 0; }
@@ -36,67 +36,96 @@ figure { margin: 0; }
 .skip { position: absolute; top: -3.5rem; left: 1rem; z-index: 5; padding: .45rem 1rem; color: var(--ink); background: white; }
 .skip:focus { top: .25rem; }
 .hero { background: var(--deep); color: white; border-bottom: 4px solid var(--gold); }
-.mast { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2rem 1rem; align-items: center; padding: 1.15rem 0; font-size: .77rem; font-weight: 750; letter-spacing: .13em; border-bottom: 1px solid #3a4b5c; }
+.mast { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1rem; align-items: center; padding: 1.05rem 0; font-size: .77rem; font-weight: 750; letter-spacing: .13em; border-bottom: 1px solid #34495b; }
 .mast span + span { color: var(--gold); }
-.hero-grid { display: grid; grid-template-columns: 1.28fr 1fr; gap: clamp(1.25rem, 5vw, 5rem); align-items: center; padding: clamp(2.3rem, 6vw, 5rem) 0; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: clamp(1.6rem, 4.4vw, 4.05rem); align-items: center; padding: clamp(2rem, 3.6vw, 3.5rem) 0; }
 .hero-content { max-width: 44rem; }
 .eyebrow { margin: 0 0 .65rem; color: #625223; font-size: .75rem; font-weight: 800; letter-spacing: .145em; text-transform: uppercase; }
 .hero .eyebrow { color: var(--gold); }
 h1, h2, h3, h4 { margin: 0; line-height: 1.1; text-wrap: balance; }
-h1 { font-family: "Barlow Condensed", "Arial Narrow", "Segoe UI", system-ui, sans-serif; font-size: clamp(2.65rem, 6.3vw, 5.6rem); font-weight: 850; line-height: .98; letter-spacing: -.05em; margin: 0 0 1.25rem; }
+h1 { font-family: "Barlow Condensed", "Arial Narrow", "Segoe UI", system-ui, sans-serif; font-size: clamp(2.65rem, 5.7vw, 5.15rem); font-weight: 850; line-height: .99; letter-spacing: -.045em; margin: 0 0 1.2rem; }
 .vs { color: var(--gold); font-size: .62em; letter-spacing: -.045em; }
-.fixture { font-size: .94rem; color: #ddc595; margin-bottom: 1.25rem; }
-.lead { font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.36; font-weight: 550; max-width: 34rem; color: #eff2f4; }
+.fixture { display: flex; flex-wrap: wrap; gap: .25rem .55rem; align-items: baseline; font-size: .94rem; color: #dce5ed; margin-bottom: 1.1rem; }
+.fixture span::before { content: "·"; display: inline-block; color: var(--gold); margin-right: .55rem; }
+.lead { font-size: clamp(1.07rem, 1.7vw, 1.37rem); line-height: 1.42; font-weight: 550; max-width: 32rem; color: #eff2f4; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-top: 1.6rem; }
 .actions [hidden] { display: none; }
-.button { appearance: none; display: inline-flex; align-items: center; gap: .5em; border-radius: 5px; border: 1px solid transparent; padding: .67rem .95rem; font: inherit; font-weight: 750; line-height: 1.25; text-decoration: none; cursor: pointer; }
+.button { appearance: none; display: inline-flex; align-items: center; justify-content: center; gap: .5em; border-radius: 6px; border: 1px solid transparent; min-height: 44px; padding: .62rem .98rem; font: inherit; font-weight: 750; line-height: 1.25; text-decoration: none; cursor: pointer; }
 .button.primary { background: var(--gold); color: var(--deep); }
 .button.primary:hover { background: #f8d68f; }
 .button.secondary { color: #fff; background: #24364a; border-color: #617082; }
 .button.secondary:hover { background: #314960; }
-.hero-board { background: #142b3d; border: 1px solid #3c5162; border-radius: 13px; padding: .9rem; max-width: 500px; }
-.hero-board figcaption { display: flex; justify-content: space-between; align-items: center; margin: 0 .15rem .65rem; letter-spacing: .13em; font-size: .74rem; font-weight: 800; }
-.hero-board figcaption strong { color: var(--gold); font-size: 1rem; }
-.hero-board > p { color: #d0d9dc; font-size: .82rem; margin: .6rem .15rem 0; }
+.hero-board { background: #142b3d; border: 1px solid #3c5162; border-radius: 12px; padding: .9rem; margin-inline: auto; width: 100%; max-width: 590px; scroll-margin-top: 5.5rem; }
+.hero-board figcaption { display: flex; justify-content: space-between; align-items: center; margin: 0 .1rem .65rem; gap: .6rem; font-size: .96rem; font-weight: 800; }
+.hero-board figcaption strong { color: var(--gold); font-size: .87rem; letter-spacing: .1em; white-space: nowrap; }
+.hero-board > p { color: #d0d9dc; font-size: .84rem; margin: .6rem .1rem 0; }
+.hero-board .film-links { margin-top: .35rem; gap: .2rem .9rem; }
+.hero-board a { color: #f4d991; text-decoration-color: #a88751; }
 .pitch { width: 100%; height: auto; display: block; border-radius: 7px; }
+.shirt-number { font-size: 15px; }
+.player-name, .arrow-label { paint-order: stroke; stroke: #123b31; stroke-width: 2.4; stroke-linejoin: round; }
+.player-name { fill: #fff; font-size: 15px; }
+.arrow-label { font-size: 12px; }
+.direction { fill: #daebe2; font-size: 11.8px; }
+.hero-board .kit-note { margin-top: .7rem; }
+.lineup-list { color: #e3ebee; font-size: .84rem; margin: .45rem .1rem .5rem; }
+.lineup-list summary { color: #f4d991; }
+.lineup-list dl { display: grid; gap: .25rem; margin: .45rem 0; }
+.lineup-list dl div { display: grid; grid-template-columns: 8.2rem minmax(0, 1fr); gap: .4rem; }
+.lineup-list dt { font-weight: 700; }
+.lineup-list dd { margin: 0; }
+summary { cursor: pointer; font-weight: 750; }
+summary:focus-visible { outline: 2px solid #b78322; outline-offset: 3px; }
+.enlarge { min-height: 42px; padding: .15rem 0; margin: .04rem .12rem 0; border: 0; color: var(--link); background: transparent; font: inherit; font-size: .86rem; font-weight: 750; text-decoration: underline; text-underline-offset: .18em; cursor: pointer; }
+.hero-board .enlarge { color: #f4d991; }
+.zoom-dialog { border: 1px solid #3c5162; border-radius: 12px; padding: 0; width: min(690px, calc(100% - 1rem)); max-height: calc(100dvh - 1rem); color: white; background: #142b3d; overflow: auto; }
+.zoom-dialog::backdrop { background: #091b2bd9; }
+.zoom-header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .65rem .8rem; }
+.zoom-header h2 { font-size: clamp(1.06rem, 3.2vw, 1.4rem); margin: 0; letter-spacing: -.01em; text-align: left; }
+.zoom-actions { display: flex; gap: .38rem; align-items: center; flex-shrink: 0; }
+.zoom-toggle { background: transparent; color: #f4d991; border-color: #647788; min-width: 4.9rem; }
+.zoom-close { background: #e5edf1; color: #132840; }
+.zoom-view { margin: 0 .65rem .65rem; border-radius: 6px; overflow: auto; max-height: calc(100dvh - 6.7rem); }
+.zoom-view.zoomed .pitch { width: max(500px, 145%); }
 .section-nav { position: sticky; top: 0; z-index: 3; background: #fff; box-shadow: 0 1px var(--line); }
-.nav-inner { display: flex; flex-wrap: wrap; gap: .2rem clamp(.55rem, 2vw, 1.65rem); padding: .58rem 0; }
-.nav-inner a { display: block; color: var(--navy); font-weight: 700; font-size: .89rem; text-decoration: none; padding: .32rem .12rem; white-space: nowrap; }
+.nav-inner { display: flex; flex-wrap: wrap; gap: .15rem clamp(.5rem, 1.65vw, 1.4rem); align-items: center; padding: .28rem 0; }
+.nav-inner a { display: inline-flex; align-items: center; min-height: 44px; color: var(--navy); font-weight: 700; font-size: .91rem; text-decoration: none; padding: .35rem .22rem; white-space: nowrap; }
 .nav-inner a:hover { text-decoration: underline; }
-section { scroll-margin-top: 5.5rem; padding: clamp(2.45rem, 5vw, 4.85rem) 0; border-bottom: 1px solid var(--line); }
-h2 { font-size: clamp(2rem, 3.8vw, 3.5rem); letter-spacing: -.045em; margin: 0 0 1.4rem; }
+section { scroll-margin-top: 4.5rem; padding: clamp(2.4rem, 4.8vw, 4.5rem) 0; border-bottom: 1px solid var(--line); }
+h2 { font-size: clamp(1.9rem, 3.5vw, 3.15rem); letter-spacing: -.044em; margin: 0 0 1.33rem; }
 h3 { font-size: clamp(1.16rem, 1.7vw, 1.46rem); letter-spacing: -.02em; margin-bottom: .6rem; }
 h4 { font-size: 1rem; margin-bottom: .45rem; }
 b, strong { font-weight: 750; }
+.player-id { white-space: nowrap; }
 .grid { display: grid; gap: 1rem; }
-.grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
-.grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
-.priorities article { border-top: 3px solid #b88a38; background: #e8eee7; padding: 1.15rem; }
-.assignment-list { margin-top: 1.65rem; border-top: 1px solid var(--line); }
-.assignment { display: grid; grid-template-columns: minmax(11rem,1fr) 3fr; gap: 1rem; border-bottom: 1px solid var(--line); padding: 1.12rem 0; }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.assignment-list { margin-top: .2rem; border-top: 1px solid var(--line); }
+.assignment { display: grid; grid-template-columns: minmax(11rem, 1fr) minmax(0, 3fr); gap: 1rem; border-bottom: 1px solid var(--line); padding: 1.12rem 0; }
 .assignment h3 { margin: .13rem 0 0; }
-.tactic-row { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.18fr); gap: clamp(1.2rem, 3vw, 3.6rem); align-items: start; margin-top: 2.4rem; }
+.tactic-row { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(1.2rem, 4vw, 4.2rem); align-items: center; margin: 2.15rem 0 0; }
+.tactic-row + .tactic-row { padding-top: 2.15rem; border-top: 1px solid var(--line); }
 .tactic-text { padding: .12rem 0; }
 .tactic-text h3 { font-size: clamp(1.45rem, 2.5vw, 2.1rem); margin-bottom: .8rem; }
 .tactic-text li, .list li { padding-left: .14rem; margin-bottom: .65rem; }
 ol, ul.list { padding-left: 1.2rem; }
-.board { background: #e4ece6; border: 1px solid #cdd9d3; border-radius: 11px; padding: .65rem; align-self: start; }
-.board figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: .25rem .4rem; padding: .55rem .12rem .05rem; color: #40544d; font-size: .83rem; }
-.marker { display: inline-block; width: .8rem; height: .8rem; border-width: 1.5px; border-style: solid; margin-left: .28rem; flex: 0 0 .8rem; }
+.board { background: #e5eee8; border: 1px solid #cdd9d3; border-radius: 11px; padding: .65rem; align-self: start; }
+.board figcaption { display: flex; flex-wrap: wrap; gap: .28rem .72rem; padding: .56rem .22rem .12rem; color: #40544d; font-size: .83rem; }
+.legend-item { display: inline-flex; align-items: center; gap: .32rem; white-space: nowrap; }
+.marker { display: inline-block; width: .8rem; height: .8rem; border-width: 1.5px; border-style: solid; flex: 0 0 .8rem; }
 .marker.chs { border-radius: 100%; background: white; border-color: #173653; }
 .marker.friar { border-radius: 2px; background: #25282a; border-color: #c6a057; }
 .marker.keeper { border-radius: 2px; background: #a1e7c0; border-color: #315443; }
-.marker.role { border-radius: 100%; border-style: dashed; border-color: #183852; background: #fff; }
-.path { width: 1.2rem; border-top: 2px solid #775017; margin-left: .32rem; }
+.path { width: 1.05rem; border-top: 2px solid #775017; }
 .path.dashed { border-top-style: dashed; }
-.film-links { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .25rem .85rem; font-size: .88rem; }
+.film-links { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .36rem .95rem; font-size: .9rem; }
 .film-links a { font-weight: 700; text-decoration-color: #7d9baa; }
 .scouting-notes { margin-top: 1.75rem; }
 .scouting-notes article, .restarts article, .game-states article, .workout article, .evidence-list article { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 1.14rem; min-width: 0; }
 .scouting-notes article { border-top: 3px solid #88a48d; }
 .note { color: var(--muted); font-size: .91rem; }
-.scout-grid { margin-top: 1rem; }
-.corner { margin-block: 1.7rem; }
+.first-row { margin-top: 1rem; }
+.free-kick { margin-top: 2.15rem; }
 .callout { padding: 1rem 1.18rem; background: #e8eee7; border-left: 4px solid #aa7e31; margin: 0 0 1.3rem; }
 .workout { margin-block: 1rem 1.35rem; }
 .subhead { margin-top: 1.6rem; }
@@ -105,9 +134,10 @@ ol, ul.list { padding-left: 1.2rem; }
 table { width: 100%; border-collapse: collapse; font-size: .96rem; }
 th, td { padding: .7rem .85rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
 thead th { color: #fff; background: var(--navy); font-weight: 750; }
-tbody th { min-width: 9rem; color: var(--navy); }
+tbody th { width: 25%; color: var(--navy); }
 tbody tr:nth-child(odd) { background: #e9eee8; }
-.sources { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.sources { margin-top: 1.3rem; padding: .9rem 1rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.sources[open] summary { margin-bottom: .7rem; }
 .touchline { background: #fff; padding-inline: clamp(1rem, 3vw, 2rem); border: 1px solid var(--line); border-top: 4px solid #b48738; border-radius: 10px; margin: 2.5rem 0; }
 .touchline h2 { margin-bottom: .8rem; }
 .touchline .actions { margin-top: 1rem; }
@@ -118,27 +148,43 @@ tbody tr:nth-child(odd) { background: #e9eee8; }
 footer { background: var(--deep); color: #e4e8ec; padding: 1.45rem 0 1.8rem; }
 footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
 footer a { color: var(--gold); }
+@media (max-width: 900px) {
+  section, .hero-board { scroll-margin-top: 6.5rem; }
+  .nav-inner { column-gap: .7rem; }
+}
+@media (min-width: 801px) {
+  .hero-content { padding-bottom: min(7vh, 5rem); }
+  .tactic-row .board { grid-column: 1; grid-row: 1; }
+  .tactic-row .tactic-text { grid-column: 2; grid-row: 1; }
+}
 @media (max-width: 800px) {
   .hero-grid { grid-template-columns: 1fr; gap: 1.8rem; }
-  .hero-board { width: 100%; max-width: 520px; }
-  .tactic-row { grid-template-columns: 1fr; }
-  .board { width: 100%; max-width: 550px; }
+  .hero-board { margin-inline: 0; }
+  .tactic-row { grid-template-columns: 1fr; align-items: start; gap: .95rem; }
+  .board { width: 100%; max-width: 580px; }
 }
 @media (max-width: 590px) {
   .wrap { width: calc(100% - 1.6rem); }
   .grid.three, .grid.two, .assignment, .touch-grid { grid-template-columns: 1fr; }
   .assignment { gap: .45rem; }
-  .nav-inner { padding: .45rem 0; }
-  .nav-inner a { font-size: .8rem; padding-block: .18rem; }
-  section { scroll-margin-top: 6rem; }
+  .nav-inner { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 .35rem; padding: .28rem 0; }
+  .nav-inner a { font-size: .78rem; min-height: 30px; padding: .22rem 0; }
+  section, .hero-board { scroll-margin-top: 6.7rem; }
   .touch-grid { gap: .45rem; }
   .mast { font-size: .68rem; }
+  .hero-board, .board { padding: .55rem; }
+  .hero-board figcaption { margin-bottom: .42rem; }
+  .lineup-list dl div { grid-template-columns: 1fr; gap: 0; }
+  .zoom-header { gap: .5rem; padding: .55rem; }
+  .zoom-actions .button { font-size: .78rem; padding-inline: .52rem; }
+  .zoom-toggle { min-width: 3.75rem; }
+  .zoom-view { margin: 0 .48rem .48rem; }
 }
 @media screen and (max-width: 590px) {
-  .touchline table, .touchline tbody, .touchline tr, .touchline th, .touchline td { display: block; }
-  .touchline thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  .touchline th, .touchline td { padding: .42rem .7rem; border: 0; }
-  .touchline tbody tr { padding: .35rem 0; border-bottom: 1px solid var(--line); }
+  .table-scroll table, .table-scroll tbody, .table-scroll tr, .table-scroll th, .table-scroll td { display: block; }
+  .table-scroll thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .table-scroll th, .table-scroll td { width: auto; padding: .35rem .7rem; border: 0; }
+  .table-scroll tr { padding: .5rem 0; border-bottom: 1px solid var(--line); }
   .touchline td::before { display: block; color: var(--muted); font-size: .8rem; font-weight: 750; }
   .touchline td:nth-child(2)::before { content: "Do this"; }
   .touchline td:nth-child(3)::before { content: "Cover"; }
@@ -151,26 +197,31 @@ footer a { color: var(--gold); }
   .wrap { width: 100%; }
   .hero .lead, .hero .eyebrow, .hero .fixture { color: #111; }
   .mast span + span, .vs { color: #785717; }
-  .hero-grid { padding: .35in 0; grid-template-columns: 1.25fr 1fr; }
+  .hero-grid { padding: .22in 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1.07fr); gap: .27in; }
   .tactic-row { grid-template-columns: 1fr 1.05fr; }
   .hero-board { color: #fff; }
   .hero-board, .board { print-color-adjust: exact; }
   .hero-board, .board, .grid article, .assignment { break-inside: avoid; }
-  .section-nav, .actions, .skip, footer { display: none !important; }
+  .hero-board .lineup-list { display: none; }
+  .tactic-row { break-inside: avoid; }
+  .section-nav, .actions, .skip, .enlarge, .zoom-dialog, footer { display: none !important; }
   h2, h3 { break-after: avoid; }
   h1 { font-size: 34pt; }
   h2 { font-size: 24pt; margin-bottom: .12in; }
   h3 { font-size: 13pt; }
   p { margin-bottom: .08in; }
   section { padding-block: .19in; }
-  .touchline { margin: 0; padding: .12in .17in; border-radius: 0; }
+  #management, .touchline { break-before: page; }
+  body.print-card .touchline { break-before: auto; }
+  .touchline { break-inside: avoid; margin: 0; padding: .12in .17in; border-radius: 0; }
   .touchline table { font-size: 9.1pt; min-width: auto; }
   th, td { padding: .055in .07in; }
   thead th { color: #111; background: #eee; }
   .table-scroll { overflow: visible; }
   .touch-grid { gap: .07in .15in; }
+  .touch-grid li, tr { break-inside: avoid; }
   .touch-grid li { padding-bottom: .02in; }
-  body.print-card > :not(#appendix), body.print-card #appendix > :not(#touchline) { display: none !important; }
+  body.print-card > :not(main), body.print-card main > :not(#touchline) { display: none !important; }
 }
 </style>
 </head>
@@ -178,294 +229,389 @@ footer a { color: var(--gold); }
   <a class="skip" href="#match-plan">Skip to the match plan</a>
   <header class="hero" id="top">
     <div class="wrap">
-      <div class="mast"><span>CANISIUS SOCCER</span><span>2026 NYSCHSAA SEMIFINAL</span></div>
+      <div class="mast"><span>CANISIUS SOCCER</span><span>NYSCHSAA SEMIFINAL</span></div>
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Varsity boys soccer · Match guide</p>
+          <p class="eyebrow">Player match guide</p>
           <h1>Canisius <span class="vs">vs.</span><br>St. Anthony’s</h1>
-          <p class="fixture">Friday, November 13 · 5 p.m. ET · St. John’s University</p>
-          <p class="lead">Keep the 4-3-3. Show them wide, protect the diagonal, and attack quickly once we control the next ball.</p>
-          <div class="actions"><a class="button primary" href="#match-plan">Read the match plan <span aria-hidden="true">↓</span></a><a class="button secondary" href="#touchline">Touchline card</a></div>
+          <p class="fixture"><time datetime="2026-11-13T17:00:00-05:00">Nov. 13, 2026 · 5 p.m. ET</time><span>St. John’s University</span></p>
+          <p class="lead">Show them outside. Check the far runner. When we win it cleanly, look for our winger.</p>
+          <div class="actions"><a class="button primary" href="#match-plan">Match plan <span aria-hidden="true">↓</span></a><a class="button secondary" href="#touchline">Touchline card</a></div>
         </div>
-        <figure class="hero-board">
-          <figcaption><span>CANISIUS</span><strong>4-3-3</strong></figcaption>
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="chs-shape-title chs-shape-desc" xmlns="http://www.w3.org/2000/svg"><title id="chs-shape-title">Canisius 4-3-3</title><desc id="chs-shape-desc">White markers show Canisius. Amodeo-10 left and Stojanovski-11 right. Shalamba-3 holds and Lumba-1 is in goal. Dashed roles are filled from the lineup.</desc><defs><marker id="chs-shape-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="chs-shape-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 34 H 478 V 306 H 22 Z M 22 170 H 478 M 116 34 V 78 H 384 V 34
-M 198 34 V 51 H 302 V 34 M 116 306 V 262 H 384 V 306 M 198 306 V 289 H 302 V 306
-M 218 34 V 24 H 282 V 34 M 218 306 V 316 H 282 V 306
-M 18 34 H 26 M 474 34 H 482 M 18 306 H 26 M 474 306 H 482" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="34" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="2.5" fill="#a7cbb0"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text x="40" y="54" text-anchor="start" fill="#e8f4e8" font-size="12">Attack ↑</text><g transform="translate(103 95)" data-team="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">10</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Amodeo-10</text></g><g transform="translate(250 77)" data-team="role" data-player="Center fwd"><rect x="-42.5" y="-12" width="85.0" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Center fwd</text></g><g transform="translate(397 95)" data-team="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Stojanovski-11</text></g><g transform="translate(156 163)" data-team="role" data-player="Left interior"><rect x="-53.15" y="-12" width="106.3" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Left interior</text></g><g transform="translate(344 163)" data-team="role" data-player="Right interior"><rect x="-56.699999999999996" y="-12" width="113.39999999999999" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Right interior</text></g><g transform="translate(250 207)" data-team="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">3</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Shalamba-3</text></g><g transform="translate(75 248)" data-team="role" data-player="LB"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">LB</text></g><g transform="translate(184 254)" data-team="role" data-player="LCB"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">LCB</text></g><g transform="translate(316 254)" data-team="role" data-player="RCB"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">RCB</text></g><g transform="translate(425 248)" data-team="role" data-player="RB"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">RB</text></g><g transform="translate(250 286)" data-team="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">1</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Lumba-1</text></g></g></svg>
-          <p>Proposed assignments. Dashed markers are roles for the selected lineup.</p>
+        <figure class="hero-board" id="lineup">
+          <figcaption><span>Starting XI vs. St. Joe’s</span><strong>4-3-3</strong></figcaption>
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="chs-shape-title chs-shape-desc" xmlns="http://www.w3.org/2000/svg"><title id="chs-shape-title">Canisius starting XI and the scouted St. Anthony’s XI</title><desc id="chs-shape-desc">Canisius attacks up in white. Stojanovski-11, Franjoine-7, and Amodeo-10 are the front three. Pili-9 and Bellacicco-19 play ahead of Sampson-2. Manley-6, Ahad-5, Shalamba-3, and Pepe-4 make up the back four. Lumba-1 is in goal. The opposite half shows all eleven players from the St. Anthony’s scouting report.</desc><defs><marker id="chs-shape-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="chs-shape-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><g class="player" transform="translate(250 47)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(82 91)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(188 95)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="29">Saporito-33</text></g><g class="player" transform="translate(312 95)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="29">Kessler-5</text></g><g class="player" transform="translate(433 91)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="29">Godoy-7</text></g><g class="player" transform="translate(250 150)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="29">Keena-22</text></g><g class="player" transform="translate(148 193)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(352 193)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(87 251)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(250 256)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(413 251)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(87 326)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(250 316)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(413 326)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g><g class="player" transform="translate(147 378)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(353 378)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(250 420)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(67 473)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(188 473)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(312 473)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(433 473)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(250 531)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g></g></svg>
+          <p class="kit-note">Canisius in white. St. Anthony’s XI from the Chaminade final.</p>
+          <details class="lineup-list">
+            <summary>Canisius lineup by position</summary>
+            <dl>
+              <div><dt>Front three</dt><dd><span class="player-id">Stojanovski-11</span>, <span class="player-id">Franjoine-7</span>, <span class="player-id">Amodeo-10</span></dd></div>
+              <div><dt>Center midfield</dt><dd><span class="player-id">Pili-9</span>, <span class="player-id">Bellacicco-19</span></dd></div>
+              <div><dt>Holding midfield</dt><dd><span class="player-id">Sampson-2</span></dd></div>
+              <div><dt>Back four</dt><dd><span class="player-id">Manley-6</span>, <span class="player-id">Ahad-5</span>, <span class="player-id">Shalamba-3</span>, <span class="player-id">Pepe-4</span></dd></div>
+              <div><dt>Goalkeeper</dt><dd><span class="player-id">Lumba-1</span></dd></div>
+            </dl>
+          </details>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=286s">St. Joe’s pregame · 4:46</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=409s">Kickoff · 6:49</a></p>
         </figure>
       </div>
     </div>
   </header>
   <nav class="section-nav" aria-label="Match guide sections">
     <div class="wrap nav-inner">
-      <a href="#match-plan">Match plan</a><a href="#scout">Opponent</a><a href="#restarts">Restarts</a><a href="#management">Bench &amp; training</a><a href="#film">Film</a><a href="#touchline">Touchline card</a>
+      <a href="#lineup">Starting XI</a><a href="#match-plan">Match plan</a><a href="#scout">Opponent</a><a href="#restarts">Set pieces</a><a href="#management">Game states</a><a href="#film">Film</a><a href="#touchline">Touchline</a>
     </div>
   </nav>
   <main class="wrap">
     <section id="match-plan">
-      <p class="eyebrow">Canisius game model</p>
-      <h2>Canisius in the 4-3-3</h2>
-      <div class="grid three priorities">
-        <article><h3>Show wide</h3><p>The central forward screens <b>Keena-22</b>. The near winger goes when the receiver is closed, and the near interior midfielder takes away the pass inside.</p></article>
-        <article><h3>See the runner</h3><p><b>Shalamba-3</b> protects the middle. Our opposite fullback and winger account for <b>Hamilton-15</b> and <b>Bridgemanhel-21</b> if St. Anthony’s can switch.</p></article>
-        <article><h3>Win the next ball</h3><p>Give the first receiver an inside pass. Release the winger after a clean regain, and put a runner at the edge of the box on every delivery.</p></article>
-      </div>
+      <h2>Our jobs in the 4-3-3</h2>
       <div class="assignment-list">
-        <div class="assignment"><h3>Front three</h3><div><p><b>Franjoine-7</b> can lead the press if central. <b>Pili-9</b> can threaten the gap between the center backs or run into the channel. <b>Amodeo-10</b> started on the left and <b>Stojanovski-11</b> on the right in the reviewed opening. Give the pressure and recovery jobs by side as the wingers move.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=371s">Opening width · 6:11</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=1198s">Franjoine-7 closes the receiver · 19:58</a></p></div></div>
-        <div class="assignment"><h3>Midfield three</h3><div><p><b>Shalamba-3</b> holds centrally and can drop to support the exit. The near interior midfielder steps toward <b>Kelly-10</b> on a pass he cannot turn on and supports our winger in possession. The far interior midfielder prepares for the knockdown and the switch. <b>Bellacicco-19</b> can collect and play out. <b>Shalamba-8</b> is another option around the contested ball.</p></div></div>
-        <div class="assignment"><h3>Back four and keeper</h3><div><p>The ball-side fullback delays while the near center back covers the channel and the other center back protects depth. The far fullback sees both the passer and the runner. When one fullback goes, the other stays with the two center backs and <b>Shalamba-3</b> screens ahead. <b>Lumba-1</b> can reset the move or go over the press. <b>Sampson-2</b> and <b>Pepe-4</b> each showed recovery into the right channel.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=1126s">Right-channel recovery · 18:46</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=1428s">Right-channel recovery · 23:48</a></p></div></div>
+        <div class="assignment"><h3>Front three</h3><div><p><b><span class="player-id">Franjoine-7</span></b>, start between the ball and <b><span class="player-id">Keena-22</span></b>. <b><span class="player-id">Stojanovski-11</span></b> starts on our left and <b><span class="player-id">Amodeo-10</span></b> on our right. If the ball comes to your side, press from inside to out. On the far side, tuck in and check the run behind our fullback.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=1198s"><span class="player-id">Franjoine-7</span> closes the receiver · 19:58</a></p></div></div>
+        <div class="assignment"><h3>Midfield three</h3><div><p><b><span class="player-id">Sampson-2</span></b>, stay in front of our center backs and block the pass into <b><span class="player-id">Crespi-11</span></b>. <b><span class="player-id">Pili-9</span></b> and <b><span class="player-id">Bellacicco-19</span></b>, the nearer of you closes <b><span class="player-id">Kelly-10</span></b> as the ball travels. The other gets under the next ball. When we have it, give the winger an inside pass.</p></div></div>
+        <div class="assignment"><h3>Back four and keeper</h3><div><p><b><span class="player-id">Manley-6</span></b> and <b><span class="player-id">Pepe-4</span></b>, delay the winger and give our wide player time to recover. Only one fullback goes at a time. <b><span class="player-id">Ahad-5</span></b> and <b><span class="player-id">Shalamba-3</span></b>, one of you takes the first ball and the other drops behind it. <b><span class="player-id">Lumba-1</span></b>, give the back line an option to reset and call early if you can come for the ball.</p></div></div>
       </div>
 
-      <div class="tactic-row">
-        <figure class="board">
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="press-title press-desc" xmlns="http://www.w3.org/2000/svg"><title id="press-title">Press on the wide pass</title><desc id="press-desc">In this example, Franjoine-7 screens Keena-22. Stojanovski-11 presses a closed receiver while the near midfielder denies Kelly-10. Our left back and winger identify Hamilton-15 and Bridgemanhel-21.</desc><defs><marker id="press-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="press-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 34 H 478 V 306 H 22 Z M 22 170 H 478 M 116 34 V 78 H 384 V 34
-M 198 34 V 51 H 302 V 34 M 116 306 V 262 H 384 V 306 M 198 306 V 289 H 302 V 306
-M 218 34 V 24 H 282 V 34 M 218 306 V 316 H 282 V 306
-M 18 34 H 26 M 474 34 H 482 M 18 306 H 26 M 474 306 H 482" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="34" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="2.5" fill="#a7cbb0"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text x="40" y="54" text-anchor="start" fill="#e8f4e8" font-size="12">Attack ↑</text><path d="M 250 111 V 92" fill="none" stroke="#f0cb91" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5"/><text x="185" y="113" fill="#f0cb91" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Screen</text><path d="M 417 165 Q 439 149 426 121" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#press-run)"/><text x="458" y="143" fill="#eaf4ee" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Press</text><path d="M 314 210 L 325 173" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#press-run)"/><path d="M 105 249 L 94 219" fill="none" stroke="#f0cb91" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5"/><g transform="translate(250 75)" data-team="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">22</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Keena-22</text></g><g transform="translate(424 85)" data-team="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">7</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Godoy-7</text></g><g transform="translate(76 79)" data-team="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">21</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Bridgemanhel-21</text></g><g transform="translate(326 136)" data-team="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">10</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Kelly-10</text></g><g transform="translate(250 131)" data-team="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">7</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Franjoine-7</text></g><g transform="translate(419 184)" data-team="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Stojanovski-11</text></g><g transform="translate(313 224)" data-team="role" data-player="Near interior"><rect x="-53.15" y="-12" width="106.3" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Near interior</text></g><g transform="translate(88 144)" data-team="role" data-player="LW"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">LW</text></g><g transform="translate(91 199)" data-team="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">15</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Hamilton-15</text></g><g transform="translate(105 262)" data-team="role" data-player="LB"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">LB</text></g><g transform="translate(229 209)" data-team="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">3</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Shalamba-3</text></g><g transform="translate(240 270)" data-team="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Crespi-11</text></g></g></svg>
-          <figcaption><span class="marker chs"></span> Canisius <span class="marker friar"></span> St. Anthony’s <span class="marker role"></span> Lineup role</figcaption>
-        </figure>
+      <article class="tactic-row">
         <div class="tactic-text">
           <p class="eyebrow">Without the ball</p>
-          <h3>Press on the wide pass</h3>
+          <h3>Press when the pass goes wide</h3>
           <ol>
-            <li><strong>Show a side.</strong> Start in a compact middle block. The striker screens <b>Keena-22</b>. The winger closes inside to out on a slow pass, heavy touch, or a receiver facing his own goal. The diagram uses <b>Franjoine-7</b> centrally and <b>Stojanovski-11</b> on the right. The near interior midfielder covers <b>Kelly-10</b>.</li>
-            <li><strong>Hold the opposite channel.</strong> When <b>Godoy-7</b> or <b>Kelly-10</b> can look up on their left, our left back checks <b>Hamilton-15</b> and <b>Bridgemanhel-21</b>. The left winger tracks the second runner. <b>Shalamba-3</b> screens <b>Crespi-11</b> in the middle.</li>
-            <li><strong>Call “drop” if they can play forward.</strong> One center back contests, the other covers the flick, and a midfielder attacks the knockdown. Keep the edge of the box covered when the line retreats.</li>
+            <li><strong>Wait for the cue.</strong> Go when the pass is slow, the touch is heavy, or the receiver is facing his own goal. On our right, <b><span class="player-id">Amodeo-10</span></b> goes to <b><span class="player-id">Godoy-7</span></b>, <b><span class="player-id">Bellacicco-19</span></b> covers <b><span class="player-id">Kelly-10</span></b>, and <b><span class="player-id">Franjoine-7</span></b> stays between the ball and <b><span class="player-id">Keena-22</span></b>.</li>
+            <li><strong>Check the far side.</strong> <b><span class="player-id">Manley-6</span></b> takes the deeper run. <b><span class="player-id">Stojanovski-11</span></b> goes with the other runner if <b><span class="player-id">Hamilton-15</span></b> and <b><span class="player-id">Bridgemanhel-21</span></b> both come. <b><span class="player-id">Sampson-2</span></b> stays between the ball and <b><span class="player-id">Crespi-11</span></b>.</li>
+            <li><strong>Drop together if they can look up.</strong> The near center back takes the first ball, the other protects against the flick, and the near midfielder gets to the knockdown. Keep someone at the edge of the box.</li>
           </ol>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4358s">September switch · 1:12:38</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6354s">Final winner · 1:45:54</a></p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4358s">Chaminade switch · 1:12:38</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6354s">Run behind for the winner · 1:45:54</a></p>
         </div>
-      </div>
-
-      <div class="tactic-row">
         <figure class="board">
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="attack-title attack-desc" xmlns="http://www.w3.org/2000/svg"><title id="attack-title">Release left, finish inside</title><desc id="attack-desc">Amodeo-10 is the example left winger. Release behind Bridgemanhel-21. Pili-9 crosses the near center back, Stojanovski-11 arrives far, and the near interior midfielder is available for the cutback.</desc><defs><marker id="attack-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="attack-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 34 H 478 V 306 H 22 Z M 22 170 H 478 M 116 34 V 78 H 384 V 34
-M 198 34 V 51 H 302 V 34 M 116 306 V 262 H 384 V 306 M 198 306 V 289 H 302 V 306
-M 218 34 V 24 H 282 V 34 M 218 306 V 316 H 282 V 306
-M 18 34 H 26 M 474 34 H 482 M 18 306 H 26 M 474 306 H 482" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="34" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="2.5" fill="#a7cbb0"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text x="40" y="54" text-anchor="start" fill="#e8f4e8" font-size="12">Attack ↑</text><path d="M 163 241 Q 92 221 76 181" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#attack-ball)"/><text x="128" y="201" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Release</text><path d="M 75 130 L 75 70" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#attack-run)"/><path d="M 80 69 Q 111 104 177 161" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#attack-ball)"/><text x="123" y="102" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Cutback</text><path d="M 239 132 Q 222 116 215 95" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#attack-run)"/><path d="M 410 129 Q 393 102 349 79" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#attack-run)"/><path d="M 207 229 Q 198 200 178 174" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#attack-run)"/><g transform="translate(74 147)" data-team="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">10</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Amodeo-10</text></g><g transform="translate(77 223)" data-team="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">21</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Bridgemanhel-21</text></g><g transform="translate(210 68)" data-team="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">5</text><text y="-20" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Kessler-5</text></g><g transform="translate(330 68)" data-team="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">33</text><text y="-20" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Saporito-33</text></g><g transform="translate(245 147)" data-team="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">9</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Pili-9</text></g><g transform="translate(416 147)" data-team="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Stojanovski-11</text></g><g transform="translate(217 244)" data-team="role" data-player="Near interior"><rect x="-53.15" y="-12" width="106.3" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Near interior</text></g><g transform="translate(377 246)" data-team="role" data-player="Far interior"><rect x="-49.599999999999994" y="-12" width="99.19999999999999" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Far interior</text></g><g transform="translate(253 284)" data-team="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">3</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Shalamba-3</text></g></g></svg>
-          <figcaption><span class="marker chs"></span> Canisius <span class="marker friar"></span> St. Anthony’s <span class="path solid"></span> Ball <span class="path dashed"></span> Run</figcaption>
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="press-title press-desc" xmlns="http://www.w3.org/2000/svg"><title id="press-title">Press on the wide pass</title><desc id="press-desc">Franjoine-7 screens Keena-22. Amodeo-10 jumps toward Godoy-7 and Bellacicco-19 covers the pass to Kelly-10. Sampson-2 stays between the ball and Crespi-11. Manley-6 and Stojanovski-11 share the far-side runners.</desc><defs><marker id="press-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="press-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><path d="M252 227V196" fill="none" stroke="#ffda90" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5"/><text class="arrow-label" x="201" y="210" fill="#ffda90">Screen</text><path d="M423 178Q443 159 426 148" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#press-run)"/><text class="arrow-label" x="460" y="166" fill="#f4faf6">Press</text><path d="M348 260 355 249" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#press-run)"/><path d="M84 405 73 366" fill="none" stroke="#ffda90" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5"/><path d="M249 369 249 379" fill="none" stroke="#ffda90" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5"/><g class="player" transform="translate(250 49)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(76 130)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(185 110)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="29">Saporito-33</text></g><g class="player" transform="translate(313 110)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="29">Kessler-5</text></g><g class="player" transform="translate(425 130)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="-20">Godoy-7</text></g><g class="player" transform="translate(251 177)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="-20">Keena-22</text></g><g class="player" transform="translate(148 201)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(357 214)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(71 327)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(250 396)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(431 336)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(250 529)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g><g class="player" transform="translate(84 422)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(187 455)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(313 455)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(431 431)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(251 333)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(151 352)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(347 279)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(81 250)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(252 245)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(425 195)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g></g></svg>
+          <figcaption><span class="legend-item"><span class="marker chs" aria-hidden="true"></span> Canisius</span><span class="legend-item"><span class="marker friar" aria-hidden="true"></span> St. Anthony’s</span><span class="legend-item"><span class="marker keeper" aria-hidden="true"></span> St. Anthony’s keeper</span><span class="legend-item"><span class="path dashed" aria-hidden="true"></span> Player run</span></figcaption>
         </figure>
+      </article>
+
+      <article class="tactic-row">
         <div class="tactic-text">
           <p class="eyebrow">With the ball</p>
-          <h3>Release wide, finish inside</h3>
+          <h3>Get wide and finish inside</h3>
           <ol>
-            <li><strong>First look left.</strong> When <b>Bridgemanhel-21</b> is high and we have a receiver facing forward, release the left winger before their cover arrives. If their fullback has already recovered, reset through <b>Shalamba-3</b>, the back line, or <b>Lumba-1</b> and switch early.</li>
-            <li><strong>Give the winger an inside pass.</strong> Have the near interior midfielder show before the ball travels wide. If their fullback jumps, play inside and send a runner behind him on the next pass.</li>
-            <li><strong>Stagger the finish.</strong> The center forward crosses the near center back, the far winger arrives beyond the other, and the near midfielder checks for the cutback. The far interior midfielder waits for the clearance. If <b>Pili-9</b> made the wide run, the next forward takes the central lane.</li>
+            <li><strong>Look left first.</strong> When <b><span class="player-id">Bridgemanhel-21</span></b> is high and you can face forward, look for <b><span class="player-id">Stojanovski-11</span></b> behind him. If the lane closes, go back through <b><span class="player-id">Sampson-2</span></b>, a center back, or <b><span class="player-id">Lumba-1</span></b> and switch to <b><span class="player-id">Amodeo-10</span></b>.</li>
+            <li><strong>Give the winger a way out.</strong> The near midfielder shows inside before the pass goes wide. If their fullback steps, use the inside pass to play the runner behind him.</li>
+            <li><strong>Arrive in three lanes.</strong> <b><span class="player-id">Franjoine-7</span></b> crosses the near center back. The far winger runs beyond the other. The near midfielder checks back for the cutback. The far midfielder waits for the clearance.</li>
           </ol>
-          <p><b>On a loss:</b> the nearest player delays the first pass into <b>Crespi-11</b>. <b>Shalamba-3</b> and the back three recover inside and check the opposite runner.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4608s">Canisius reset and switch · 1:16:48</a><a href="https://www.youtube.com/watch?v=dQEmnBCnXiM&amp;t=5564s">Bergen’s wide exit · 1:32:44</a></p>
+          <p>If we lose it, the nearest player slows the first pass. <b><span class="player-id">Sampson-2</span></b> covers <b><span class="player-id">Crespi-11</span></b> while the back line gets inside and checks the far runner.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4608s">Our reset and switch · 1:16:48</a><a href="https://www.youtube.com/watch?v=dQEmnBCnXiM&amp;t=5564s">Bergen gets out wide · 1:32:44</a></p>
         </div>
-      </div>
+        <figure class="board">
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="attack-title attack-desc" xmlns="http://www.w3.org/2000/svg"><title id="attack-title">Release left, finish inside</title><desc id="attack-desc">Release Stojanovski-11 behind Bridgemanhel-21. Franjoine-7 crosses the near center back, Amodeo-10 arrives far, and Pili-9 shows for the cutback. Bellacicco-19 reads the clearance. Sampson-2 and the back line protect the exit.</desc><defs><marker id="attack-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="attack-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><path d="M150 234Q92 222 82 185" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#attack-ball)"/><text class="arrow-label" x="104" y="221" fill="#ffcf6c">Release</text><path d="M77 143 74 89" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#attack-run)"/><path d="M82 87Q118 106 159 152" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#attack-ball)"/><text class="arrow-label" x="124" y="84" fill="#ffcf6c">Cutback</text><path d="M243 149Q221 129 204 114" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#attack-run)"/><path d="M411 144Q394 125 348 113" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#attack-run)"/><path d="M165 227Q149 195 159 166" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#attack-run)"/><g class="player" transform="translate(250 49)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(84 267)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(311 122)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="-20">Saporito-33</text></g><g class="player" transform="translate(184 122)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="-20">Kessler-5</text></g><g class="player" transform="translate(425 95)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="-20">Godoy-7</text></g><g class="player" transform="translate(256 239)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="29">Keena-22</text></g><g class="player" transform="translate(154 324)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(348 329)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(253 405)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(76 348)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(430 360)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(251 527)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g><g class="player" transform="translate(76 414)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(185 443)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(317 443)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(431 426)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(250 345)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(171 244)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(349 258)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(80 162)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(251 168)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(424 162)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g></g></svg>
+          <figcaption><span class="legend-item"><span class="marker chs" aria-hidden="true"></span> Canisius</span><span class="legend-item"><span class="marker friar" aria-hidden="true"></span> St. Anthony’s</span><span class="legend-item"><span class="marker keeper" aria-hidden="true"></span> St. Anthony’s keeper</span><span class="legend-item"><span class="path solid" aria-hidden="true"></span> Ball</span><span class="legend-item"><span class="path dashed" aria-hidden="true"></span> Player run</span></figcaption>
+        </figure>
+      </article>
     </section>
 
     <section id="scout">
-      <p class="eyebrow">Opposition scout</p>
-      <h2>How St. Anthony’s plays</h2>
-      <div class="tactic-row scout-grid">
-        <figure class="board">
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="sahs-shape-title sahs-shape-desc" xmlns="http://www.w3.org/2000/svg"><title id="sahs-shape-title">St. Anthony’s working shape</title><desc id="sahs-shape-desc">The Chaminade final role map shows a back four under Keena-22. Saporito-33 is the film attribution. The season roster lists Saporito-16.</desc><defs><marker id="sahs-shape-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="sahs-shape-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 34 H 478 V 306 H 22 Z M 22 170 H 478 M 116 34 V 78 H 384 V 34
-M 198 34 V 51 H 302 V 34 M 116 306 V 262 H 384 V 306 M 198 306 V 289 H 302 V 306
-M 218 34 V 24 H 282 V 34 M 218 306 V 316 H 282 V 306
-M 18 34 H 26 M 474 34 H 482 M 18 306 H 26 M 474 306 H 482" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="34" fill="none" stroke="#a7cbb0" stroke-width="1.15" opacity=".68"/>
-<circle cx="250" cy="170" r="2.5" fill="#a7cbb0"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text x="40" y="54" text-anchor="start" fill="#e8f4e8" font-size="12">Attack ↑</text><g transform="translate(94 75)" data-team="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">8</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Gentile-8</text></g><g transform="translate(250 71)" data-team="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Crespi-11</text></g><g transform="translate(406 75)" data-team="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">15</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Hamilton-15</text></g><g transform="translate(156 137)" data-team="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">10</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Kelly-10</text></g><g transform="translate(344 137)" data-team="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">6</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Rossiter-6</text></g><g transform="translate(250 180)" data-team="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">22</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Keena-22</text></g><g transform="translate(72 229)" data-team="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">7</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Godoy-7</text></g><g transform="translate(183 229)" data-team="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">5</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Kessler-5</text></g><g transform="translate(309 229)" data-team="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">33</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Saporito-33</text></g><g transform="translate(429 229)" data-team="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">21</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Bridgemanhel-21</text></g><g transform="translate(250 286)" data-team="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#2e4f3c" stroke-width="2"/><text y="4.5" fill="#173727" font-size="13.5">1</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">O’Shaughnessy-1</text></g></g></svg>
-          <figcaption><span class="marker friar"></span> St. Anthony’s dark kit <span class="marker keeper"></span> Final goalkeeper kit</figcaption>
-        </figure>
+      <h2>What to watch for from St. Anthony’s</h2>
+      <article class="tactic-row first-row">
         <div class="tactic-text">
-          <h3>Back four, with Keena-22 as the outlet</h3>
-          <p>The Chaminade final supports a back four and <b>Keena-22</b> as the deepest midfielder. A 4-3-3 is a working picture. When <b>Kelly-10</b> drops alongside <b>Keena-22</b>, the midfield sometimes resembles a double pivot. Positions above the back four move.</p>
-          <p><b>Kessler-5</b> and <b>Saporito-33</b> can circulate through <b>Keena-22</b>. <b>Kelly-10</b> turns under pressure. <b>Rossiter-6</b> offers the inside run, <b>Gentile-8</b> supplies width and corners, and <b>Crespi-11</b> can drop before releasing <b>Hamilton-15</b> in behind. <b>Godoy-7</b> can switch to <b>Bridgemanhel-21</b> from the opposite side.</p>
-          <p><b>Film number check.</b> The Chaminade final shows <b>Saporito-33</b> and the broadcast identifies him by name. The season roster lists <b>Saporito-16</b>. Confirm his shirt at warmups. Canisius is drawn in white with navy numbers for this guide; the St. Joe’s footage shows Canisius in navy with gold numbers.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2006s">Build through Keena-22 · 33:26</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2810s">Saporito-33 in the final · 46:50</a></p>
+          <h3><span class="player-id">Keena-22</span> gives them an outlet</h3>
+          <p>Their center backs look for <b><span class="player-id">Keena-22</span></b> in front of the back four. <b><span class="player-id">Kelly-10</span></b> can drop beside him and turn out of pressure. Make them play wide by taking away those passes.</p>
+          <p>When <b><span class="player-id">Godoy-7</span></b> or <b><span class="player-id">Crespi-11</span></b> gets his head up, check the far shoulder. <b><span class="player-id">Hamilton-15</span></b> runs behind. <b><span class="player-id">Bridgemanhel-21</span></b> can go from right back. <b><span class="player-id">Rossiter-6</span></b> can follow the wide pass with an inside run.</p>
+          <p><b><span class="player-id">Saporito-33</span></b> is his number in the final footage. The season roster lists <b><span class="player-id">Saporito-16</span></b>, so check his shirt before the game.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2006s">Build through <span class="player-id">Keena-22</span> · 33:26</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2810s"><span class="player-id">Saporito-33</span> in the final · 46:50</a></p>
         </div>
-      </div>
+        <figure class="board">
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="sahs-shape-title sahs-shape-desc" xmlns="http://www.w3.org/2000/svg"><title id="sahs-shape-title">St. Anthony’s build through Keena-22</title><desc id="sahs-shape-desc">St. Anthony’s attacks down. The back four circulate through Keena-22, and Kelly-10 can drop to receive before turning. All eleven Canisius players are shown in the middle block.</desc><defs><marker id="sahs-shape-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="sahs-shape-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><path d="M306 120Q288 148 263 163" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#sahs-shape-ball)"/><path d="M265 167Q313 169 335 200" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#sahs-shape-ball)"/><g class="player" transform="translate(249 48)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(77 118)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(188 105)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="29">Saporito-33</text></g><g class="player" transform="translate(316 105)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="29">Kessler-5</text></g><g class="player" transform="translate(427 119)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="29">Godoy-7</text></g><g class="player" transform="translate(245 166)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="29">Keena-22</text></g><g class="player" transform="translate(347 214)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(151 215)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(78 317)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(249 361)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(426 312)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(250 532)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g><g class="player" transform="translate(68 456)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(183 474)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(314 474)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(432 454)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(250 418)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(150 342)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(347 342)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(85 253)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(251 252)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(429 253)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g></g></svg>
+          <figcaption><span class="legend-item"><span class="marker chs" aria-hidden="true"></span> Canisius</span><span class="legend-item"><span class="marker friar" aria-hidden="true"></span> St. Anthony’s</span><span class="legend-item"><span class="marker keeper" aria-hidden="true"></span> St. Anthony’s keeper</span><span class="legend-item"><span class="path solid" aria-hidden="true"></span> Ball</span></figcaption>
+        </figure>
+      </article>
       <div class="grid two scouting-notes">
         <article>
-          <h3>Where they hurt teams</h3>
+          <h3>When they have it</h3>
           <ul class="list">
-            <li><b>Diagonal behind the far back.</b> <b>Crespi-11</b> found <b>Hamilton-15</b> for the final winner after a missed clearance. <b>Godoy-7</b> also released <b>Bridgemanhel-21</b> at 1-1.</li>
-            <li><b>Second ball at the edge.</b> <b>Godoy-7</b> scored the late winner against St. Francis Prep when a contested clearance fell outside the box.</li>
-            <li><b>Air and depth.</b> <b>Kessler-5</b> attacks the far post and protects his own goalmouth. <b>Crespi-11</b> can lead the counter after their first clearance, even when they are ahead.</li>
+            <li>At 1-1 in the final, <b><span class="player-id">Godoy-7</span></b> switched to <b><span class="player-id">Bridgemanhel-21</span></b>. Minutes later, <b><span class="player-id">Crespi-11</span></b> played behind the line for <b><span class="player-id">Hamilton-15</span></b> to score after a missed clearance.</li>
+            <li>Against St. Francis Prep, <b><span class="player-id">Godoy-7</span></b> scored from the edge after a contested clearance. Step to the loose ball while the back line holds its depth.</li>
           </ul>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6099s">Diagonal to Bridgemanhel-21 · 1:41:39</a><a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=6293s">Godoy-7 from the edge · 1:44:53</a></p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6099s">Switch to <span class="player-id">Bridgemanhel-21</span> · 1:41:39</a><a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=6293s"><span class="player-id">Godoy-7</span> from the edge · 1:44:53</a></p>
         </article>
         <article>
-          <h3>Where Canisius can hurt them</h3>
+          <h3>When we win it</h3>
           <ul class="list">
-            <li><b>Behind the advancing fullback.</b> Bergen and Chaminade got out wide before cover arrived. Read the space and the passer’s body shape. <b>Bridgemanhel-21</b> also showed he can recover and block.</li>
-            <li><b>Behind the first defender.</b> If the fullback steps and the inside pass is open, bounce inside and release the next runner. If the center back follows, cut back for the late arrival.</li>
-            <li><b>Before their line resets.</b> Return a loose clearance quickly while their defenders are still turning. If they control it, protect the first outlet and recover our shape.</li>
+            <li>Bergen and Chaminade got out down the touchline. Go when the space is open and you can face forward. <b><span class="player-id">Bridgemanhel-21</span></b> can recover quickly.</li>
+            <li>If their center back comes across to the winger, cut the ball back for the late runner. On a loose clearance, play it back in early while their defenders are turning.</li>
           </ul>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4603s">Chaminade’s exit at 1-2 · 1:16:43</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5924s">Re-entry before the penalty · 1:38:44</a></p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4603s">Chaminade’s wide exit · 1:16:43</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5924s">Second ball before the penalty · 1:38:44</a></p>
         </article>
       </div>
     </section>
 
     <section id="restarts">
-      <p class="eyebrow">Set pieces</p>
-      <h2>First contact, next ball, cover</h2>
+      <h2>Set pieces</h2>
       <div class="grid two restarts">
         <article>
-          <h3>Canisius goal kicks</h3>
-          <p><b>Lumba-1</b> starts short to the free side when the defender can receive open and the near interior midfielder is already inside the winger. If two players lock that side, name the channel target, inside collector, and runner beyond before kicking. <b>Pili-9</b> can contest or run beyond, <b>Bellacicco-19</b> can read the knockdown, and <b>Shalamba-3</b> stays goal-side.</p>
-          <p class="note">St. Joe’s sample at 0-0: one short and two direct. The short route reached <b>Stojanovski-11</b> before the two-player trap closed.</p>
+          <h3>Our goal kick</h3>
+          <p><b><span class="player-id">Lumba-1</span></b>, go short when a defender can receive facing upfield and a midfielder is already inside our winger. If they lock the short side, call the channel and go long. <b><span class="player-id">Franjoine-7</span></b> or the winger contests, the near midfielder gets under it, and the far winger gets ready for the switch. <b><span class="player-id">Sampson-2</span></b> stays goal-side.</p>
+          <p class="note">Against St. Joe’s, one of the three reviewed kicks went short and two went direct. The short kick reached <b><span class="player-id">Stojanovski-11</span></b> before two defenders closed him down.</p>
           <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=3918s">Short · 1:05:18</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=3988s">Direct, far side · 1:06:28</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=5408s">Direct, near side · 1:30:08</a></p>
         </article>
         <article>
-          <h3>St. Anthony’s goal kicks</h3>
-          <p>On the closed receiver, curve the center forward’s run to take away the return to <b>O’Shaughnessy-1</b>. The near winger guards the fullback and goes on the pass. The interior midfielder screens <b>Keena-22</b> or the next inside outlet. Prepare one center back for the first duel, one for the flick, and <b>Shalamba-3</b> beneath it. Let the block drop together if the first receiver has time to lift his head.</p>
-          <p class="note">Three confirmed in the Chaminade final opened short. The receiver went long on two of the three next distributions.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=1360s">Short then direct · 22:40</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2568s">Short then circulate · 42:48</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6996s">Short then long again · 1:56:36</a></p>
+          <h3>Their goal kick</h3>
+          <p><b><span class="player-id">Franjoine-7</span></b>, curve your run when the first receiver is closed. Take away the return to <b><span class="player-id">O’Shaughnessy-1</span></b>. The near winger goes on the pass to the fullback. The near midfielder takes away the inside pass. If the receiver can play long cleanly, drop and have <b><span class="player-id">Sampson-2</span></b> underneath the duel.</p>
+          <p class="note">All three reviewed kicks in the Chaminade final began short. On two of them the next pass went long.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=1360s">Short then direct · 22:40</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2568s">Short then across · 42:48</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6996s">Short then long again · 1:56:36</a></p>
         </article>
       </div>
-      <div class="tactic-row corner">
-        <figure class="board">
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="right-corner-title right-corner-desc" xmlns="http://www.w3.org/2000/svg"><title id="right-corner-title">Canisius right corner</title><desc id="right-corner-desc">Amodeo-10 delivers. Bellacicco-19 holds the edge and can redirect a loose ball to Stojanovski-11 on the far side. If the cross-field pass closes, return the ball to the taker. This is a rehearsal pattern.</desc><defs><marker id="right-corner-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="right-corner-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 44 H 478 V 310 H 22 Z M 116 44 V 160 H 384 V 44
-M 195 44 V 86 H 305 V 44 M 216 44 V 31 H 284 V 44
-M 208 160 Q 250 205 292 160 M 464 44 Q 464 58 478 58" fill="none" stroke="#a7cbb0" stroke-width="1.2" opacity=".74"/>
-<circle cx="250" cy="124" r="2.4" fill="#a7cbb0"/>
-<path d="M 478 44 V 19 L 464 26 L 478 30" fill="#edc36a" stroke="#edc36a" stroke-width="1.5"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><path d="M 437 82 Q 411 112 376 116" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><text x="385" y="87" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Serve</text><path d="M 283 197 Q 203 194 130 135" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><text x="209" y="217" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Play across</text><path d="M 111 112 Q 113 83 144 76" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#right-corner-run)"/><path d="M 312 198 Q 425 174 445 108" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><text x="428" y="182" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Or return</text><g transform="translate(449 69)" data-team="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">10</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Amodeo-10</text></g><g transform="translate(297 205)" data-team="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">19</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Bellacicco-19</text></g><g transform="translate(112 125)" data-team="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">11</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Stojanovski-11</text></g><g transform="translate(324 115)" data-team="role" data-player="First runner"><rect x="-49.599999999999994" y="-12" width="99.19999999999999" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">First runner</text></g><g transform="translate(220 133)" data-team="role" data-player="Second runner"><rect x="-53.15" y="-12" width="106.3" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Second runner</text></g><g transform="translate(253 259)" data-team="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">3</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Shalamba-3</text></g><g transform="translate(155 280)" data-team="role" data-player="Cover"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Cover</text></g><g transform="translate(355 280)" data-team="role" data-player="Cover"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Cover</text></g></g></svg>
-          <figcaption><span class="marker chs"></span> Canisius <span class="marker role"></span> Lineup role <span class="path solid"></span> Ball <span class="path dashed"></span> Run</figcaption>
-        </figure>
+
+      <article class="tactic-row">
         <div class="tactic-text">
-          <h3>Canisius right corner</h3>
+          <h3>Our right corner</h3>
           <ol>
-            <li><b>Amodeo-10</b> delivers. <b>Bellacicco-19</b> holds the edge and <b>Stojanovski-11</b> waits on the far side. If the ball comes back and the diagonal is open, play across for the late arrival.</li>
-            <li>If the defender closes that lane, <b>Bellacicco-19</b> returns the ball to <b>Amodeo-10</b> for a new crossing angle. <b>Stojanovski-11</b> also served lofted from the left in regulation.</li>
-            <li>Keep two defenders and a screen behind the attack. If both <b>Crespi-11</b> and <b>Hamilton-15</b> stay high, keep a third defender for cover.</li>
+            <li><b><span class="player-id">Amodeo-10</span></b> serves. <b><span class="player-id">Franjoine-7</span></b> and <b><span class="player-id">Pili-9</span></b> attack different lanes. <b><span class="player-id">Stojanovski-11</span></b> waits on the far side.</li>
+            <li><b><span class="player-id">Bellacicco-19</span></b>, hold the edge for the clearance. If the diagonal is open, play it across to <b><span class="player-id">Stojanovski-11</span></b>. If it closes, play back to <b><span class="player-id">Amodeo-10</span></b> for another cross.</li>
+            <li><b><span class="player-id">Sampson-2</span></b> stays underneath. <b><span class="player-id">Ahad-5</span></b>, <b><span class="player-id">Shalamba-3</span></b>, and <b><span class="player-id">Manley-6</span></b> protect the break. Keep a spare while <b><span class="player-id">Crespi-11</span></b> and <b><span class="player-id">Hamilton-15</span></b> are high.</li>
           </ol>
           <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7846s">Return to the taker · 2:10:46</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7876s">Winning repeat · 2:11:16</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=2284s">Left corner · 38:04</a></p>
         </div>
-      </div>
-      <div class="grid two restarts">
-        <article>
-          <h3>Canisius wide free kicks</h3>
-          <p><b>Manley-6</b> serves from his reliable angle. Send <b>Pili-9</b> through the first group and <b>Pepe-4</b> later beyond it. <b>Bellacicco-19</b> reads the loose clearance and serves again early when the line is still turning. If <b>Pepe-4</b> goes, the other center back and tucked fullback hold depth. Keep a defender goal-side of <b>Crespi-11</b> and a spare behind.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=2497s">Manley-6 delivery · 41:37</a><a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=4370s">Run beyond first group · 1:12:50</a></p>
-        </article>
-        <article>
-          <h3>St. Anthony’s defending set pieces</h3>
-          <p>In two Chaminade corners from the same flag, dark shirts covered the near area and tracked arriving runners. <b>Crespi-11</b> broke out after a low delivery was cleared. Show a near run and arrive late on the far side. If the clearance lands loose, serve again early while their line is turning.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5445s">Goal-mouth cover · 1:30:45</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5471s">Crespi-11 breaks out · 1:31:11</a></p>
-        </article>
-      </div>
-      <div class="tactic-row">
         <figure class="board">
-          <svg class="pitch" viewBox="0 0 500 340" role="img" aria-labelledby="their-corner-title their-corner-desc" xmlns="http://www.w3.org/2000/svg"><title id="their-corner-title">Defend St. Anthony’s right corner</title><desc id="their-corner-desc">St. Anthony’s attacks toward the top. Gentile-8 serves from the right. Shalamba-3 goes with Kessler-5 to the far post, Manley-6 tracks Saporito-33, Pepe-4 covers beyond and Franjoine-7 closes the edge. Lumba-1 can claim through the middle.</desc><defs><marker id="their-corner-ball" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#ffcf6c"/></marker><marker id="their-corner-run" viewBox="0 0 10 8" markerWidth="5.4" markerHeight="4.7" refX="9" refY="4" orient="auto-start-reverse"><path d="M 0 0 L 10 4 L 0 8 z" fill="#eaf4ee"/></marker></defs><rect width="500" height="340" rx="10" fill="#154c3b"/>
-<path d="M 22 44 H 478 V 310 H 22 Z M 116 44 V 160 H 384 V 44
-M 195 44 V 86 H 305 V 44 M 216 44 V 31 H 284 V 44
-M 208 160 Q 250 205 292 160 M 464 44 Q 464 58 478 58" fill="none" stroke="#a7cbb0" stroke-width="1.2" opacity=".74"/>
-<circle cx="250" cy="124" r="2.4" fill="#a7cbb0"/>
-<path d="M 478 44 V 19 L 464 26 L 478 30" fill="#edc36a" stroke="#edc36a" stroke-width="1.5"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><path d="M 430 71 Q 324 5 135 73" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#their-corner-ball)"/><text x="327" y="32" fill="#ffcf6c" stroke="#154c3b" stroke-width="3" paint-order="stroke" font-size="12.5">Far-post service</text><path d="M 151 145 Q 133 121 127 87" fill="none" stroke="#eaf4ee" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#their-corner-run)"/><path d="M 183 123 L 169 143" fill="none" stroke="#f0cb91" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5"/><path d="M 297 128 L 305 150" fill="none" stroke="#f0cb91" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="6 5"/><g transform="translate(449 69)" data-team="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">8</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Gentile-8</text></g><g transform="translate(162 160)" data-team="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">5</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Kessler-5</text></g><g transform="translate(311 167)" data-team="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#25282a" stroke="#d1ac62" stroke-width="2"/><text y="4.5" fill="#f5ce79" font-size="13.5">33</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Saporito-33</text></g><g transform="translate(197 117)" data-team="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">3</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Shalamba-3</text></g><g transform="translate(288 114)" data-team="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">6</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Manley-6</text></g><g transform="translate(88 85)" data-team="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">4</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Pepe-4</text></g><g transform="translate(250 86)" data-team="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">1</text><text y="-20" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Lumba-1</text></g><g transform="translate(269 231)" data-team="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#183852" stroke-width="2"/><text y="4.5" fill="#102c46" font-size="13.5">7</text><text y="30" fill="#fff" stroke="#154c3b" stroke-width="3" stroke-linejoin="round" paint-order="stroke" font-size="14">Franjoine-7</text></g><g transform="translate(399 126)" data-team="role" data-player="Short"><rect x="-34.0" y="-12" width="68" height="24" rx="10" fill="#ffffff" fill-opacity=".94" stroke="#183852" stroke-width="1.2" stroke-dasharray="3 2"/><text y="4.5" fill="#102c46" font-size="12.5">Short</text></g></g></svg>
-          <figcaption><span class="marker chs"></span> Canisius <span class="marker friar"></span> St. Anthony’s <span class="path solid"></span> Ball <span class="path dashed"></span> Run</figcaption>
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="right-corner-title right-corner-desc" xmlns="http://www.w3.org/2000/svg"><title id="right-corner-title">Canisius right corner</title><desc id="right-corner-desc">Amodeo-10 delivers. Franjoine-7 and Pili-9 attack different lanes. Bellacicco-19 holds the edge and plays a loose ball to Stojanovski-11 or returns it to Amodeo-10. Sampson-2 and the defenders protect against the outlets.</desc><defs><marker id="right-corner-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="right-corner-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<path d="M482 24V8l-17 6 17 4" fill="#ffcf6c" stroke="#ffcf6c" stroke-width="1.4"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><path d="M429 62Q381 122 296 118" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><text class="arrow-label" x="393" y="62" fill="#ffcf6c">Serve</text><path d="M294 217Q205 181 149 111Q127 92 101 94" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><path d="M79 79Q91 64 110 66" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#right-corner-run)"/><path d="M335 216Q381 172 429 82" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#right-corner-ball)"/><text class="arrow-label" x="349" y="177" fill="#ffcf6c">Or return</text><g class="player" transform="translate(242 43)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(333 75)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="-20">Kessler-5</text></g><g class="player" transform="translate(166 76)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="29">Saporito-33</text></g><g class="player" transform="translate(100 173)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(381 112)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="29">Godoy-7</text></g><g class="player" transform="translate(245 179)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="29">Keena-22</text></g><g class="player" transform="translate(146 229)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(415 228)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(444 120)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(268 377)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(93 320)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(250 531)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g><g class="player" transform="translate(78 401)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(185 425)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(316 425)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(420 170)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(239 319)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(183 140)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(315 224)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(83 96)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(275 115)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(442 51)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g></g></svg>
+          <figcaption><span class="legend-item"><span class="marker chs" aria-hidden="true"></span> Canisius</span><span class="legend-item"><span class="marker friar" aria-hidden="true"></span> St. Anthony’s</span><span class="legend-item"><span class="marker keeper" aria-hidden="true"></span> St. Anthony’s keeper</span><span class="legend-item"><span class="path solid" aria-hidden="true"></span> Ball</span><span class="legend-item"><span class="path dashed" aria-hidden="true"></span> Player run</span></figcaption>
         </figure>
+      </article>
+
+      <div class="grid two restarts free-kick">
+        <article>
+          <h3>Our wide free kick</h3>
+          <p><b><span class="player-id">Manley-6</span></b> serves. <b><span class="player-id">Pili-9</span></b> goes through the first group, and <b><span class="player-id">Pepe-4</span></b> runs beyond it. <b><span class="player-id">Bellacicco-19</span></b> stays at the edge and plays a loose clearance back in while their line is turning. Keep one player goal-side of <b><span class="player-id">Crespi-11</span></b> and another behind him.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=2497s"><span class="player-id">Manley-6</span> delivery · 41:37</a><a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=4370s">Run beyond the first group · 1:12:50</a></p>
+        </article>
+        <article>
+          <h3>When they clear it</h3>
+          <p>Chaminade’s first two corners from the same side went into a crowded near area. <b><span class="player-id">Crespi-11</span></b> broke out as soon as the second one was cleared. If you’re at the edge, get to the loose ball. If he has it, slow him down while we recover.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5445s">Near-post cover · 1:30:45</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5471s"><span class="player-id">Crespi-11</span> breaks out · 1:31:11</a></p>
+        </article>
+      </div>
+
+      <article class="tactic-row">
         <div class="tactic-text">
-          <h3>Defending their corners and free kicks</h3>
-          <p><b>Shalamba-3</b> tracks <b>Kessler-5</b>, <b>Manley-6</b> tracks <b>Saporito-33</b> if selected, and <b>Pepe-4</b> covers beyond them. <b>Franjoine-7</b> owns the edge. A separate player takes the short option. <b>Lumba-1</b> calls the claim. Hold those jobs through the clearance and the next service.</p>
-          <p class="note"><b>Gentile-8</b> found <b>Kessler-5</b> at the far post from their right corner. Eight of nine verified final free kicks were served high. <b>Kelly-10</b> and <b>Godoy-7</b> each supplied four in the sample.</p>
-          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2262s">Kessler-5 at far post · 37:42</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5537s">Kelly-10 through traffic · 1:32:17</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=6414s">St. Joe’s repeat service · 1:46:54</a></p>
+          <h3>Their corners and wide free kicks</h3>
+          <p><b><span class="player-id">Shalamba-3</span></b> goes with <b><span class="player-id">Kessler-5</span></b> through the far-post run. <b><span class="player-id">Manley-6</span></b> takes <b><span class="player-id">Saporito-33</span></b> if he’s on. <b><span class="player-id">Pepe-4</span></b> covers the far post, <b><span class="player-id">Franjoine-7</span></b> takes the edge, and <b><span class="player-id">Stojanovski-11</span></b> goes short. <b><span class="player-id">Lumba-1</span></b> calls the claim. Stay with your job until we control the ball.</p>
+          <p class="note"><b><span class="player-id">Gentile-8</span></b> found <b><span class="player-id">Kessler-5</span></b> at the far post. Eight of their nine reviewed free kicks were served high, with <b><span class="player-id">Godoy-7</span></b> and <b><span class="player-id">Kelly-10</span></b> taking four each.</p>
+          <p class="film-links"><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=2262s"><span class="player-id">Kessler-5</span> at the far post · 37:42</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=5537s"><span class="player-id">Kelly-10</span> through traffic · 1:32:17</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=6414s">St. Joe’s second delivery · 1:46:54</a></p>
         </div>
+        <figure class="board">
+          <svg class="pitch" viewBox="0 0 500 580" role="img" aria-labelledby="their-corner-title their-corner-desc" xmlns="http://www.w3.org/2000/svg"><title id="their-corner-title">Defend St. Anthony’s right corner</title><desc id="their-corner-desc">St. Anthony’s attacks down. Gentile-8 serves from the bottom left to Kessler-5 at the far post. Shalamba-3 takes Kessler-5, Manley-6 takes Saporito-33, Pepe-4 protects the far space, and Franjoine-7 closes the edge. Stojanovski-11 covers short and Lumba-1 can claim.</desc><defs><marker id="their-corner-ball" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#ffcf6c"/></marker><marker id="their-corner-run" viewBox="0 0 10 8" markerWidth="5.3" markerHeight="4.6" refX="9" refY="4" orient="auto"><path d="M0 0 10 4 0 8z" fill="#f4faf6"/></marker></defs>
+<rect width="500" height="580" rx="9" fill="#123b31"/>
+<rect x="18" y="24" width="464" height="532" fill="#1b5242"/>
+<path d="M18 100h464v76H18z M18 252h464v76H18z M18 404h464v76H18z" fill="#215948"/>
+<g fill="none" stroke="#a8cbb5" stroke-width="1.15" opacity=".68">
+  <path d="M18 24H482V556H18z M18 290H482 M128 24v83h244V24 M206 24v34h88V24
+  M128 556v-83h244v83 M206 556v-34h88v34 M226 24V14h48v10 M226 556v10h48v-10
+  M220 107a40 40 0 0 0 60 0 M220 473a40 40 0 0 1 60 0"/>
+  <circle cx="250" cy="290" r="38"/>
+  <path d="M18 35a11 11 0 0 0 11-11 M471 24a11 11 0 0 0 11 11
+  M18 545a11 11 0 0 1 11 11 M471 556a11 11 0 0 1 11-11"/>
+</g>
+<g fill="#a8cbb5" opacity=".85"><circle cx="250" cy="83" r="2"/><circle cx="250" cy="290" r="2"/><circle cx="250" cy="497" r="2"/></g>
+<path d="M18 556v-16l18 6-18 4" fill="#ffcf6c" stroke="#ffcf6c" stroke-width="1.4"/><g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"><text class="direction" x="30" y="44" text-anchor="start">Canisius attacks ↑</text><path d="M76 534Q205 553 357 532" fill="none" stroke="#ffcf6c" stroke-width="2.7" stroke-linecap="round" marker-end="url(#their-corner-ball)"/><text class="arrow-label" x="151" y="559" fill="#ffcf6c">Far-post service</text><path d="M365 459Q386 487 377 523" fill="none" stroke="#f4faf6" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5" marker-end="url(#their-corner-run)"/><path d="M346 464 352 451" fill="none" stroke="#ffda90" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5"/><path d="M157 473 156 462" fill="none" stroke="#ffda90" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="5 5"/><g class="player" transform="translate(250 49)" data-team="friars" data-kit="keeper" data-player="O’Shaughnessy-1"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#a1e7c0" stroke="#264f39" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#132f1f">1</text><text class="player-name" y="29">O’Shaughnessy-1</text></g><g class="player" transform="translate(72 285)" data-team="friars" data-kit="friars" data-player="Bridgemanhel-21"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">21</text><text class="player-name" y="29">Bridgemanhel-21</text></g><g class="player" transform="translate(156 436)" data-team="friars" data-kit="friars" data-player="Saporito-33"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">33</text><text class="player-name" y="29">Saporito-33</text></g><g class="player" transform="translate(348 420)" data-team="friars" data-kit="friars" data-player="Kessler-5"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">5</text><text class="player-name" y="29">Kessler-5</text></g><g class="player" transform="translate(435 304)" data-team="friars" data-kit="friars" data-player="Godoy-7"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">7</text><text class="player-name" y="29">Godoy-7</text></g><g class="player" transform="translate(248 248)" data-team="friars" data-kit="friars" data-player="Keena-22"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">22</text><text class="player-name" y="29">Keena-22</text></g><g class="player" transform="translate(308 283)" data-team="friars" data-kit="friars" data-player="Rossiter-6"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">6</text><text class="player-name" y="29">Rossiter-6</text></g><g class="player" transform="translate(174 306)" data-team="friars" data-kit="friars" data-player="Kelly-10"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">10</text><text class="player-name" y="29">Kelly-10</text></g><g class="player" transform="translate(61 530)" data-team="friars" data-kit="friars" data-player="Gentile-8"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">8</text><text class="player-name" y="29">Gentile-8</text></g><g class="player" transform="translate(227 419)" data-team="friars" data-kit="friars" data-player="Crespi-11"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">11</text><text class="player-name" y="29">Crespi-11</text></g><g class="player" transform="translate(433 425)" data-team="friars" data-kit="friars" data-player="Hamilton-15"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#24272b" stroke="#d9b775" stroke-width="1.8"/><text class="shirt-number" y="4.8" fill="#ffe3a1">15</text><text class="player-name" y="29">Hamilton-15</text></g><g class="player" transform="translate(250 530)" data-team="chs" data-kit="chs" data-player="Lumba-1"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">1</text><text class="player-name" y="29">Lumba-1</text></g><g class="player" transform="translate(158 489)" data-team="chs" data-kit="chs" data-player="Manley-6"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">6</text><text class="player-name" y="29">Manley-6</text></g><g class="player" transform="translate(229 470)" data-team="chs" data-kit="chs" data-player="Ahad-5"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">5</text><text class="player-name" y="29">Ahad-5</text></g><g class="player" transform="translate(346 481)" data-team="chs" data-kit="chs" data-player="Shalamba-3"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">3</text><text class="player-name" y="29">Shalamba-3</text></g><g class="player" transform="translate(418 511)" data-team="chs" data-kit="chs" data-player="Pepe-4"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">4</text><text class="player-name" y="29">Pepe-4</text></g><g class="player" transform="translate(239 365)" data-team="chs" data-kit="chs" data-player="Sampson-2"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">2</text><text class="player-name" y="29">Sampson-2</text></g><g class="player" transform="translate(132 373)" data-team="chs" data-kit="chs" data-player="Pili-9"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">9</text><text class="player-name" y="29">Pili-9</text></g><g class="player" transform="translate(387 370)" data-team="chs" data-kit="chs" data-player="Bellacicco-19"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">19</text><text class="player-name" y="29">Bellacicco-19</text></g><g class="player" transform="translate(77 469)" data-team="chs" data-kit="chs" data-player="Stojanovski-11"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">11</text><text class="player-name" y="29">Stojanovski-11</text></g><g class="player" transform="translate(316 333)" data-team="chs" data-kit="chs" data-player="Franjoine-7"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">7</text><text class="player-name" y="29">Franjoine-7</text></g><g class="player" transform="translate(415 242)" data-team="chs" data-kit="chs" data-player="Amodeo-10"><circle r="13.5" fill="#ffffff" stroke="#17344c" stroke-width="2"/><text class="shirt-number" y="4.8" fill="#102c46">10</text><text class="player-name" y="29">Amodeo-10</text></g></g></svg>
+          <figcaption><span class="legend-item"><span class="marker chs" aria-hidden="true"></span> Canisius</span><span class="legend-item"><span class="marker friar" aria-hidden="true"></span> St. Anthony’s</span><span class="legend-item"><span class="marker keeper" aria-hidden="true"></span> St. Anthony’s keeper</span><span class="legend-item"><span class="path solid" aria-hidden="true"></span> Ball</span><span class="legend-item"><span class="path dashed" aria-hidden="true"></span> Player run</span></figcaption>
+        </figure>
+      </article>
+    </section>
+    <section id="management">
+      <h2>How we play the score</h2>
+      <div class="callout">
+        <h3>First ten minutes</h3>
+        <p>Find their deepest midfielder and check who runs on their right. Go on the first clear pressing cue. On goal kicks, get under the first duel and call the next ball. If they keep playing through us or over us, drop together and make them play in front of us.</p>
+      </div>
+      <div class="grid three game-states">
+        <article><h3>Level</h3><p>Stay compact. Screen <b><span class="player-id">Keena-22</span></b> and watch for the long ball after their first short pass. If <b><span class="player-id">Bridgemanhel-21</span></b> goes high, look left as soon as we win it.</p></article>
+        <article><h3>Ahead</h3><p>Far winger, get back early. Keep someone at the edge of the box and leave <b><span class="player-id">Franjoine-7</span></b> or a winger up for the outlet. Stay on your feet near the box.</p></article>
+        <article><h3>Behind</h3><p>One midfielder joins the box for the cutback. The fullback on the ball side can go once the pass is secure. <b><span class="player-id">Sampson-2</span></b> and the other fullback stay. Switch before they get across.</p></article>
+      </div>
+
+      <h3 class="subhead">What we rehearse</h3>
+      <div class="grid three workout">
+        <article><h4>Press and recover</h4><p>Work both flanks. If the ball goes over us, call “drop,” find the far runner, and get under the first duel.</p></article>
+        <article><h4>Win it and get wide</h4><p>Start with a long kick into the channel. Win the next touch, then switch or reset. Finish with one runner near, one far, and one for the cutback.</p></article>
+        <article><h4>Stay with the set piece</h4><p>Run <b><span class="player-id">Amodeo-10</span></b>’s right corner, <b><span class="player-id">Manley-6</span></b>’s wide free kick, and their far-post delivery. Play through the clearance and the first pass out.</p></article>
       </div>
     </section>
+
+    <section id="film">
+      <h2>Film to watch</h2>
+      <h3>Our 1-0 overtime win against St. Joe’s</h3>
+      <div class="grid two evidence-list">
+        <article><h4>Reset and switch</h4><p><b><span class="player-id">Ahad-5</span></b> and <b><span class="player-id">Shalamba-3</span></b> help reset through <b><span class="player-id">Lumba-1</span></b>. When the short side is shut, we go long. <b><span class="player-id">Bellacicco-19</span></b> wins the next touch and the switch sends <b><span class="player-id">Amodeo-10</span></b> to the right byline.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4608s">Second-half switch · 1:16:48</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=2244s">First-half exit · 37:24</a></p></article>
+        <article><h4>Get a runner behind them</h4><p><b><span class="player-id">Pili-9</span></b> makes the run into the left channel. When we go back across to <b><span class="player-id">Amodeo-10</span></b>, the runners are in the box. A later high ball gives their keeper time to come out. Look for the early pass or the cutback.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4536s">Run into the left channel · 1:15:36</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=5769s">Keeper claims the cross · 1:36:09</a></p></article>
+        <article><h4>Help the first player</h4><p>Two defenders close <b><span class="player-id">Stojanovski-11</span></b> after the short goal kick. Give him the inside pass early. When <b><span class="player-id">Franjoine-7</span></b> presses, cover inside him so the next pass stays wide.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=3918s">Short goal kick · 1:05:18</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=1198s">First press · 19:58</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=5024s">Space down the middle · 1:23:44</a></p></article>
+        <article><h4>Our winner</h4><p><b><span class="player-id">Amodeo-10</span></b> drives the corner low. <b><span class="player-id">Bellacicco-19</span></b> sends it across and <b><span class="player-id">Stojanovski-11</span></b> cuts inside to score. Watch where those two are when the ball comes out.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7876s">Winning corner · 2:11:16</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7951s">Replay · 2:12:31</a></p></article>
+      </div>
+      <h3>St. Anthony’s in close games</h3>
+      <div class="table-scroll">
+        <table class="film-table" aria-label="St. Anthony’s close games">
+          <thead><tr><th scope="col">Match</th><th scope="col">What to watch</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Bergen Catholic · 0-0</th><td>Bergen win the ball after a second delivery and break down the near side. <a href="https://www.youtube.com/watch?v=dQEmnBCnXiM&amp;t=5564s">Wide break · 1:32:44</a> · <a href="https://www.youtube.com/watch?v=dQEmnBCnXiM">Full match</a></td></tr>
+            <tr><th scope="row">St. Francis Prep · 2-1</th><td>At 1-1, <b><span class="player-id">Godoy-7</span></b> takes the loose ball at the edge and scores. <a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=6293s">Winner · 1:44:53</a> · <a href="https://www.youtube.com/watch?v=ZKreb4fgsiE">Full match</a></td></tr>
+            <tr><th scope="row">Chaminade · 3-1</th><td>At 2-1, St. Anthony’s get down the far side with <b><span class="player-id">Keena-22</span></b> covered. Chaminade also get out wide after winning it. <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4128s">Far-side pass · 1:08:48</a> · <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4603s">Chaminade break · 1:16:43</a> · <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ">Full match</a></td></tr>
+            <tr><th scope="row">Chaminade final · 2-1</th><td>At 1-1, the switch finds <b><span class="player-id">Bridgemanhel-21</span></b>. Then <b><span class="player-id">Crespi-11</span></b> plays behind the line for <b><span class="player-id">Hamilton-15</span></b>. <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6099s">Switch · 1:41:39</a> · <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6354s">Winner · 1:45:54</a> · <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI">Full match</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <details class="sources">
+        <summary>Match sources and lineup notes</summary>
+        <p>Canisius’s XI is the lineup supplied for the St. Joe’s game. The diagrams use <b><span class="player-id">Pili-9</span></b> as the left center midfielder and <b><span class="player-id">Bellacicco-19</span></b> as the right center midfielder. St. Anthony’s XI comes from their Chaminade final. Their shirts and positions are shown from that scouting report.</p>
+        <p>Film links use video time. Set-piece counts come from the clips reviewed. Canisius wore navy in the St. Joe’s film and is shown in white here.</p>
+        <p class="film-links"><a href="https://canisiussports.com/sports/mens-soccer/roster">Canisius roster</a><a href="https://canisiussports.com/sports/mens-soccer/schedule">Canisius schedule</a><a href="https://www.maxpreps.com/ny/melville/st-anthonys-friars/soccer/roster/">St. Anthony’s roster</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8">Full St. Joe’s match</a><a href="https://www.maxpreps.com/ny/soccer/match/canisius-buffalo-vs-st-josephs-collegiate-institute-buffalo/11-2-2026/?c=938099b6-7dce-41cb-9e4b-d5008ae8bc94&amp;tab=Stats">St. Joe’s match stats</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=919s">St. Anthony’s pregame · 15:19</a></p>
+      </details>
+    </section>
+
+    <section class="touchline" id="touchline">
+      <p class="eyebrow">Canisius vs. St. Anthony’s · 4-3-3</p>
+      <h2>Touchline card</h2>
+      <p class="touch-calls">“Show wide.” “Check the runner.” “Next ball.”</p>
+      <div class="table-scroll">
+        <table aria-label="Touchline decisions">
+          <thead><tr><th scope="col">If you see</th><th scope="col">Do this</th><th scope="col">Cover</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Slow pass wide or a closed receiver</th><td><b><span class="player-id">Franjoine-7</span></b> screens <b><span class="player-id">Keena-22</span></b>. Near winger goes inside to out. Near midfielder takes away <b><span class="player-id">Kelly-10</span></b>.</td><td><b><span class="player-id">Sampson-2</span></b> holds. Far winger and fullback check <b><span class="player-id">Hamilton-15</span></b> and <b><span class="player-id">Bridgemanhel-21</span></b>.</td></tr>
+            <tr><th scope="row">Their passer gets his head up</th><td>Drop. Near center back takes the first ball. The other covers the flick.</td><td><b><span class="player-id">Sampson-2</span></b> gets under it. Far fullback checks the runner.</td></tr>
+            <tr><th scope="row">We win it with <span class="player-id">Bridgemanhel-21</span> high</th><td>Look for <b><span class="player-id">Stojanovski-11</span></b> left. If the lane closes, reset and switch to <b><span class="player-id">Amodeo-10</span></b>.</td><td><b><span class="player-id">Sampson-2</span></b> screens <b><span class="player-id">Crespi-11</span></b>. Two center backs and far fullback stay.</td></tr>
+            <tr><th scope="row">Our winger reaches the byline</th><td><b><span class="player-id">Franjoine-7</span></b> crosses the near center back. Far winger goes beyond the other.</td><td>Near midfielder shows for the cutback. Far midfielder waits for the clearance.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Set pieces</h3>
+      <ul class="touch-grid">
+        <li><strong>Our goal kick.</strong> <b><span class="player-id">Lumba-1</span></b>, find the free side. If short is shut, call the channel and go long. Get a midfielder under the duel.</li>
+        <li><strong>Our right corner.</strong> <b><span class="player-id">Amodeo-10</span></b> serves. <b><span class="player-id">Bellacicco-19</span></b> has the edge and <b><span class="player-id">Stojanovski-11</span></b> is far. Play back to <b><span class="player-id">Amodeo-10</span></b> if the diagonal closes.</li>
+        <li><strong>Our wide free kick.</strong> <b><span class="player-id">Manley-6</span></b> serves. <b><span class="player-id">Pili-9</span></b> goes through, <b><span class="player-id">Pepe-4</span></b> goes beyond, and <b><span class="player-id">Bellacicco-19</span></b> waits for the clearance.</li>
+        <li><strong>Their delivery.</strong> <b><span class="player-id">Shalamba-3</span></b> has <b><span class="player-id">Kessler-5</span></b>. <b><span class="player-id">Manley-6</span></b> has <b><span class="player-id">Saporito-33</span></b> after we check his number. <b><span class="player-id">Pepe-4</span></b> covers far, <b><span class="player-id">Franjoine-7</span></b> takes the edge, and <b><span class="player-id">Stojanovski-11</span></b> takes short. Listen for <b><span class="player-id">Lumba-1</span></b>.</li>
+      </ul>
+      <p><b>First ten:</b> check their deepest midfielder, look for the run on their right, and call the next ball.</p>
+      <div class="actions"><button class="button primary" id="print-card" type="button" hidden>Print touchline card</button></div>
+    </section>
   </main>
-  <div class="wrap" id="appendix">
-  <section id="management">
-    <p class="eyebrow">Bench and training</p>
-    <h2>Run the game from the bench</h2>
-    <div class="callout"><h3>First ten minutes</h3><p>Identify their deepest midfielder and the runner on their right. Test the wide press on one clear cue. Have the bench track who controls the next touch on goal kicks, whether the far-side runner gets free, and whether our wide receiver has an inside pass. If they repeatedly get through or over the first wave with control, hold the middle block.</p></div>
-    <div class="grid three game-states">
-      <article><h3>Level</h3><p>Keep the block compact. Screen <b>Keena-22</b>, check for the short-then-long goal kick, and release left when <b>Bridgemanhel-21</b> is high. Retain cover and the player underneath the next ball.</p></article>
-      <article><h3>Ahead</h3><p>Recover the far winger earlier. Protect the edge of the box and leave <b>Pili-9</b> or a winger as the outlet. Avoid wide free kicks. Check how many players they push forward before moving our line.</p></article>
-      <article><h3>Behind</h3><p>Send one interior midfielder toward the cutback. Let the ball-side fullback support when the ball is secure. Keep the other fullback and <b>Shalamba-3</b> back. Switch early while their block is still shifting.</p></article>
+  <footer><div class="wrap"><span>Canisius soccer · 2026 match guide</span><a href="#top">Back to top</a></div></footer>
+  <dialog class="zoom-dialog" aria-labelledby="zoom-title">
+    <div class="zoom-header">
+      <h2 id="zoom-title"></h2>
+      <div class="zoom-actions">
+        <button class="button zoom-toggle" type="button" aria-pressed="false">Zoom in</button>
+        <form method="dialog"><button class="button zoom-close" type="submit">Close</button></form>
+      </div>
     </div>
-    <h3 class="subhead">Three six-minute training blocks</h3>
-    <div class="grid three workout">
-      <article><h4>Press and recover</h4><p>Rehearse both flanks. Have the opposition switch once and play over the press once. Score the rep on pressure at release, sight of the far runner, and control of the next ball.</p></article>
-      <article><h4>Exit and finish</h4><p>Start with a keeper-to-channel pass and a defender tight to the target. Give the collector a choice to switch early or reset. Finish with the forward across the first center back, the far winger behind the other, and the midfielder at the cutback.</p></article>
-      <article><h4>Play through the clearance</h4><p>Alternate the right corner from <b>Amodeo-10</b>, wide service from <b>Manley-6</b>, and an opposition far-post delivery. Keep the rep alive through the first counter pass.</p></article>
-    </div>
-  </section>
+    <div class="zoom-view" role="region" aria-label="Full-size pitch, scrollable on small screens" tabindex="0"></div>
+  </dialog>
+  <script>
+    const printCard = document.querySelector("#print-card");
+    printCard.hidden = false;
+    printCard.addEventListener("click", () => {
+      document.body.classList.add("print-card");
+      window.print();
+    });
+    window.addEventListener("afterprint", () => document.body.classList.remove("print-card"));
 
-  <section id="film">
-    <p class="eyebrow">Film room</p>
-    <h2>What Canisius showed against St. Joe’s</h2>
-    <p>Canisius won the November 2 Monsignor Martin final 1-0 in overtime after a scoreless 80 minutes. The broadcast momentarily assigned the goal to the wrong side of the graphic. The replay, title graphic, and school result identify Canisius as the winner. The clips start at the listed video offsets.</p>
-    <div class="grid two evidence-list">
-      <article><h3>Reset, contest, switch</h3><p><b>Ahad-5</b> and <b>Shalamba-3</b> help reset through <b>Lumba-1</b>. The keeper goes longer with the short side covered. <b>Bellacicco-19</b> collects with <b>Manley-6</b> under the play and <b>Pili-9</b> available. The early switch gives <b>Amodeo-10</b> the right byline. In the first half, <b>Stojanovski-11</b> got to the left byline after a similar long exit and second ball.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4608s">Second-half switch · 1:16:48</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=2244s">First-half exit · 37:24</a></p></article>
-      <article><h3>Get the runner away early</h3><p><b>Pili-9</b> runs into the left channel after a midfield win. Canisius recycles right to <b>Amodeo-10</b> for service as runners arrive. A later high ball between the center backs is claimed. A low early pass or a cutback gives the runner a better target.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4536s">Left run and recycle · 1:15:36</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=5769s">Keeper claims the cross · 1:36:09</a></p></article>
-      <article><h3>Support the first presser and receiver</h3><p>St. Joe’s squeezed <b>Stojanovski-11</b> after a short goal kick and forced a throw. They also played up the line after <b>Franjoine-7</b> closed their first receiver, and later carried through the middle into a shot saved by <b>Lumba-1</b>. Keep an inside outlet in possession, and protect the presser’s inside shoulder when defending.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=4314s">Closed left channel · 1:11:54</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=5024s">Middle open in recovery · 1:23:44</a></p></article>
-      <article><h3>Stay alive for the second ball</h3><p>On the overtime winner, <b>Amodeo-10</b> drives the right corner low, <b>Bellacicco-19</b> plays across, and <b>Stojanovski-11</b> controls on the far side before cutting inside to finish. The first intervening touch is obscured. The team box score credits <b>Bellacicco-19</b> with the assist.</p><p class="film-links"><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7876s">Winning corner · 2:11:16</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8&amp;t=7951s">Replay and call · 2:12:31</a><a href="https://www.maxpreps.com/contest/?contestid=938099b6-7dce-41cb-9e4b-d5008ae8bc94">Team box score</a></p></article>
-    </div>
-    <h3 class="subhead">St. Anthony’s in close games</h3>
-    <div class="table-scroll">
-      <table class="film-table">
-        <thead><tr><th scope="col">Match</th><th scope="col">What to show</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Bergen Catholic · 0-0</th><td>After a recycled St. Anthony’s service, Bergen break down the near channel and reach the box. <a href="https://www.youtube.com/watch?v=dQEmnBCnXiM&amp;t=5564s">Wide release · 1:32:44</a> · <a href="https://www.youtube.com/watch?v=dQEmnBCnXiM">Full match</a></td></tr>
-          <tr><th scope="row">St. Francis Prep · 2-1</th><td>At 1-1, <b>Godoy-7</b> takes the loose ball at the edge and scores. <a href="https://www.youtube.com/watch?v=ZKreb4fgsiE&amp;t=6293s">Winner · 1:44:53</a> · <a href="https://www.youtube.com/watch?v=ZKreb4fgsiE">Full match</a></td></tr>
-          <tr><th scope="row">Chaminade · 3-1</th><td>In the long 2-1 phase, St. Anthony’s advance down the far flank even with <b>Keena-22</b> tracked. Chaminade also break wide after a recovery. <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4128s">Pivot tracked · 1:08:48</a> · <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ&amp;t=4603s">Chaminade exit · 1:16:43</a> · <a href="https://www.youtube.com/watch?v=uIxSMYYLvxQ">Full match</a></td></tr>
-          <tr><th scope="row">Chaminade final · 2-1</th><td>At 1-1, a switch releases <b>Bridgemanhel-21</b>, then a diagonal from <b>Crespi-11</b> finds <b>Hamilton-15</b> for the winner. <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6099s">Switch · 1:41:39</a> · <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=6354s">Winner · 1:45:54</a> · <a href="https://www.youtube.com/watch?v=YIHJd_nnLeI">Full match</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="sources">
-      <h3>Sources and lineup checks</h3>
-      <p>The guide uses selected sequences from one Canisius match and four St. Anthony’s matches. Restart counts refer to confirmed visible examples. The score adjustments are coaching decisions. The St. Joe’s film shows Canisius playing at level until the deciding goal, and the opponent sample gives little evidence of St. Anthony’s chasing a deficit.</p>
-      <p>The school roster verifies the Canisius player numbers, including <b>Bonaventure Shalamba-3</b>, <b>Bienvenu Shalamba-8</b>, <b>Tony Franjoine-7</b>, and <b>Elliot Manley-6</b>. The Canisius diagrams show proposed assignments for the selected lineup.</p>
-      <p class="film-links"><a href="https://canisiussports.com/sports/mens-soccer/roster">Canisius roster</a><a href="https://canisiussports.com/sports/mens-soccer/schedule">Canisius schedule</a><a href="https://www.maxpreps.com/ny/melville/st-anthonys-friars/soccer/roster/">St. Anthony’s roster</a><a href="https://www.youtube.com/watch?v=1u5kurtycS8">Full St. Joe’s broadcast</a><a href="https://www.youtube.com/watch?v=YIHJd_nnLeI&amp;t=919s">St. Anthony’s final lineup · 15:19</a></p>
-    </div>
-  </section>
-
-  <section class="touchline" id="touchline">
-    <p class="eyebrow">Canisius vs. St. Anthony’s · 4-3-3</p>
-    <h2>Touchline card</h2>
-    <p class="touch-calls">“Show wide.” “See the runner.” “Next ball.”</p>
-    <div class="table-scroll">
-      <table aria-label="Touchline decisions">
-        <thead><tr><th scope="col">See this</th><th scope="col">Do this</th><th scope="col">Cover</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Closed receiver or slow wide pass</th><td>Center forward screens <b>Keena-22</b>. Near winger presses inside to out. Interior midfielder guards the lane into <b>Kelly-10</b>.</td><td><b>Shalamba-3</b> holds. Far winger and fullback see <b>Hamilton-15</b> and <b>Bridgemanhel-21</b>.</td></tr>
-          <tr><th scope="row">Passer looks up or Kelly-10 turns</th><td>Drop. One center back contests, the other covers the flick. Near midfielder attacks the next touch.</td><td><b>Shalamba-3</b> protects the knockdown. Far fullback sees the runner.</td></tr>
-          <tr><th scope="row">Clean regain with Bridgemanhel-21 high</th><td>Release left through a player facing forward. Reset and switch if the channel closes.</td><td>Two center backs and opposite fullback stay. <b>Shalamba-3</b> screens <b>Crespi-11</b>.</td></tr>
-          <tr><th scope="row">Our winger reaches the byline</th><td><b>Pili-9</b> crosses the near center back. Far winger goes beyond the other. Near interior midfielder shows for the cutback.</td><td>Far interior midfielder covers the clearance. If <b>Pili-9</b> is wide, the next forward makes the central run.</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <h3>Restarts</h3>
-    <ul class="touch-grid">
-      <li><strong>Our goal kick.</strong> <b>Lumba-1</b> finds the free side. If short is locked, name the channel target, inside collector, and runner beyond.</li>
-      <li><strong>Our right corner.</strong> <b>Amodeo-10</b> serves, <b>Bellacicco-19</b> owns the edge, <b>Stojanovski-11</b> waits far. Return to <b>Amodeo-10</b> when the diagonal closes.</li>
-      <li><strong>Our wide free kick.</strong> <b>Manley-6</b> serves. <b>Pili-9</b> through the first group, <b>Pepe-4</b> beyond, <b>Bellacicco-19</b> for the loose clearance. Keep cover on <b>Crespi-11</b>.</li>
-      <li><strong>Their delivery.</strong> <b>Shalamba-3</b> takes <b>Kessler-5</b>, <b>Manley-6</b> takes <b>Saporito-33</b> once the shirt is verified, <b>Pepe-4</b> covers, and <b>Franjoine-7</b> takes the edge. Name a separate short defender. <b>Lumba-1</b> calls the claim.</li>
-    </ul>
-    <p><b>First ten:</b> confirm their pivot and right runner, test one clean press cue, and track who controls the next ball.</p>
-    <p><b>Score:</b> level, keep the plan. Ahead, recover the far winger and keep the outlet. Behind, send one interior midfielder and one fullback, with <b>Shalamba-3</b> and the opposite fullback staying.</p>
-    <div class="actions"><button class="button primary" id="print-card" type="button" hidden>Print touchline card</button><a href="#top">Back to top</a></div>
-  </section>
-</div>
-<footer><div class="wrap"><span>Canisius soccer · 2026 match guide</span><span><a href="#film">Film and sources</a></span></div></footer>
-<script>
-  const printCard = document.querySelector("#print-card");
-  printCard.hidden = false;
-  printCard.addEventListener("click", () => {
-    document.body.classList.add("print-card");
-    window.print();
-  });
-  window.addEventListener("afterprint", () => document.body.classList.remove("print-card"));
-</script>
-
+    const zoomDialog = document.querySelector(".zoom-dialog");
+    const zoomView = zoomDialog.querySelector(".zoom-view");
+    const zoomToggle = zoomDialog.querySelector(".zoom-toggle");
+    if (typeof zoomDialog.showModal === "function") {
+      zoomToggle.addEventListener("click", () => {
+        const enlarged = zoomView.classList.toggle("zoomed");
+        zoomToggle.setAttribute("aria-pressed", String(enlarged));
+        zoomToggle.textContent = enlarged ? "Fit" : "Zoom in";
+        zoomView.scrollTo(enlarged ? (zoomView.scrollWidth - zoomView.clientWidth) / 2 : 0, 0);
+      });
+      for (const svg of document.querySelectorAll("svg.pitch")) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "enlarge";
+        button.textContent = "Enlarge diagram";
+        button.setAttribute("aria-haspopup", "dialog");
+        svg.closest("figure").append(button);
+        button.addEventListener("click", () => {
+          const copy = svg.cloneNode(true);
+          for (const node of copy.querySelectorAll("[id]")) node.id += "-zoom";
+          for (const node of copy.querySelectorAll("[marker-end]")) {
+            node.setAttribute("marker-end", node.getAttribute("marker-end").replace(")", "-zoom)"));
+          }
+          copy.setAttribute("aria-labelledby", copy.getAttribute("aria-labelledby").split(" ").map(id => id + "-zoom").join(" "));
+          zoomView.replaceChildren(copy);
+          zoomDialog.querySelector("h2").textContent = svg.querySelector("title").textContent;
+          zoomDialog.showModal();
+          zoomDialog.querySelector(".zoom-close").focus();
+          zoomView.scrollTo(0, 0);
+        });
+      }
+      zoomDialog.addEventListener("close", () => {
+        zoomView.replaceChildren();
+        zoomView.classList.remove("zoomed");
+        zoomToggle.setAttribute("aria-pressed", "false");
+        zoomToggle.textContent = "Zoom in";
+      });
+    }
+  </script>
 </body>
 </html>
